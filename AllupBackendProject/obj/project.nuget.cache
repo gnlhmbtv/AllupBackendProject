@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k4h8cbLv0y4atxAUitkoWNnm8Zb9LZNNL6Ts20LuNEpjP4LddDtWYlxpRogSxpUIdqpPAaDBedN0ieWpF1b+8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\AllupBackendProject\\AllupBackendProject\\AllupBackendProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
