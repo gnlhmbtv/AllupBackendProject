@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AllupBackendProject.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,8 @@ namespace AllupBackendProject.DAL
         {
 
         }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderDescription> SliderDescriptions { get; set; }
+
     }
 }
