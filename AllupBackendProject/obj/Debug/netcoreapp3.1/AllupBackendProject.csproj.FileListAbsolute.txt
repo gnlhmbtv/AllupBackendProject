@@ -141,3 +141,7 @@ C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\net
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_Validation.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Update.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Slider\Detail.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Index.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Delete.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Update.cshtml.g.cs

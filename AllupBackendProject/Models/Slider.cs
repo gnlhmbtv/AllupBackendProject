@@ -15,7 +15,7 @@ namespace AllupBackendProject.Models
         public string ImageUrl { get; set; }
         [NotMapped]
         [Required]
-        public IFormFile[] Photos { get; set; }
+        public IFormFile Photos { get; set; }
         public string SubTitle { get; set; }
         public string MainTitle { get; set; }
         public string SliderText { get; set; }

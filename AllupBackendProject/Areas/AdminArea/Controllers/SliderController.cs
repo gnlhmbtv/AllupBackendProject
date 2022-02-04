@@ -39,30 +39,25 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
             {
                 ModelState.AddModelError("Photos", "Do not empty");
             }
-            foreach (IFormFile photo in slider.Photos)
+            if (!slider.Photos.IsImage())
             {
-                if (!photo.IsImage())
-                {
-                    ModelState.AddModelError("Photos", "only image");
-                    return View();
-                }
-                if (photo.IsCorrectSize(300))
-                {
-                    ModelState.AddModelError("Photos", "300den yuxari ola bilmez");
-                    return View();
-                }
-
-                Slider newSlider = new Slider();
-
-                string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images");
-                newSlider.ImageUrl = fileName;
-                newSlider.MainTitle = slider.MainTitle;
-                newSlider.SubTitle = slider.SubTitle;
-                newSlider.SliderText = slider.SliderText;
-
-                await _context.Sliders.AddAsync(newSlider);
-                await _context.SaveChangesAsync();
+                ModelState.AddModelError("Photo", "Please upload only image files");
+                return View();
             }
+            if (slider.Photos.IsCorrectSize(300))
+            {
+                ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
+                return View();
+            }
+            Slider newSlider = new Slider();
+
+            string fileName = await slider.Photos.SaveImageAsync(_env.WebRootPath, "images");
+            newSlider.ImageUrl = fileName;
+            newSlider.MainTitle = slider.MainTitle;
+            newSlider.SubTitle = slider.SubTitle;
+            newSlider.SliderText = slider.SliderText;
+            await _context.Sliders.AddAsync(newSlider);
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }
@@ -104,15 +99,37 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id, Slider slider)
         {
-            if (id == null) return NotFound();
-                Slider updatedSlider = _context.Sliders.FirstOrDefault(s => s.Id == slider.Id);
-
-                updatedSlider.MainTitle = slider.MainTitle;
-                updatedSlider.SubTitle = slider.SubTitle;
-                updatedSlider.SliderText = slider.SliderText;
-
-                await _context.SaveChangesAsync();
+            if (slider.Photos != null)
+            {
+                if (ModelState["Photos"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
+                {
+                    ModelState.AddModelError("Photos", "Do not empty");
+                }
+                if (!slider.Photos.IsImage())
+                {
+                    ModelState.AddModelError("Photo", "Please upload only image files");
+                    return View();
+                }
+                if (slider.Photos.IsCorrectSize(300))
+                {
+                    ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
+                    return View();
+                }
+                Slider dbslider = await _context.Sliders.FindAsync(id);
+                string path = Path.Combine(_env.WebRootPath, "images", dbslider.ImageUrl);
+                if (System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
+                string filename = await slider.Photos.SaveImageAsync(_env.WebRootPath, "images");
                 
+                dbslider.ImageUrl = filename;
+                dbslider.MainTitle = slider.MainTitle;
+                dbslider.SubTitle = slider.SubTitle;
+                dbslider.SliderText = slider.SliderText;
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction("Index");
         }
         public async Task<IActionResult> Detail(int? id)
