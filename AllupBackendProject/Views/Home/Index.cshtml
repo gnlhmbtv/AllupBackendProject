@@ -10,7 +10,7 @@
 	{
     <div class="single-slider">
         <div class="slider-image">
-            <img src="~/assets/images/@item.ImageUrl" alt="slider">
+            <img src="~/images/@item.ImageUrl" alt="slider">
         </div>
         <div class="slider-content-wrapper">
             <div class="container-fluid custom-container">
@@ -26,7 +26,7 @@
 	} <!-- single slider -->
     <!--<div class="single-slider">
         <div class="slider-image">
-            <img src="~/assets/images/slider-2.jpg" alt="slider">
+            <img src="~/images/slider-2.jpg" alt="slider">
         </div>
         <div class="slider-content-wrapper">
             <div class="container-fluid custom-container">
@@ -47,16 +47,15 @@
 <div class="banner-area banner-bg">
     <div class="container-fluid custom-container">
         <div class="row">
-            <div class="col-md-6">
+            @foreach (var item in Model.Banners)
+	            {
+		  <div class="col-md-6">
                 <div class="banner-image">
-                    <a href="shop-4-column.html"><img src="~/assets/images/banner-1.png" alt="banner"></a>
+                    <a href="shop-4-column.html"><img src="~/images/@item.PhotoUrl" alt="banner"></a>
                 </div> <!-- banner image -->
             </div>
-            <div class="col-md-6">
-                <div class="banner-image">
-                    <a href="shop-4-column.html"><img src="~/assets/images/banner-2.png" alt="banner"></a>
-                </div> <!-- banner image -->
-            </div>
+	            }
+           
         </div> <!-- row -->
     </div> <!-- container -->
 </div>
@@ -74,104 +73,17 @@
             </div>
         </div> <!-- row -->
         <div class="row category-active">
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-1.jpg" alt="category">
-                        <p>Laptop</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-2.jpg" alt="category">
-                        <p>Computer</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-3.jpg" alt="category">
-                        <p>Smartphone</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-4.jpg" alt="category">
-                        <p>Game Consoles</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-5.jpg" alt="category">
-                        <p>Bottoms</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-6.jpg" alt="category">
-                        <p>Tops & Sets</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-7.jpg" alt="category">
-                        <p>Audio & Video</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-8.jpg" alt="category">
-                        <p>Accessories</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-9.jpg" alt="category">
-                        <p>Camera</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-10.jpg" alt="category">
-                        <p>Accessories</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-11.jpg" alt="category">
-                        <p> Games & Consoles </p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-12.jpg" alt="category">
-                        <p>Video Games</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-1.jpg" alt="category">
-                        <p>Tops & Sets</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/category-2.jpg" alt="category">
-                        <p>Bottoms</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
+            @foreach (var item in Model.Categories)
+            {
+                <div class="col-lg-2">
+                    <div class="single-category text-center">
+                        <a target="_blank" href="shop-left-sidebar.html">
+                            <img src="~/images/@item.ImageUrl" alt="category">
+                            <p>@item.Name</p>
+                        </a>
+                    </div> <!-- single category -->
+                </div>
+            }
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
@@ -206,8 +118,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -234,8 +146,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-10.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-10.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -263,8 +175,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-4.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-4.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -293,7 +205,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -321,7 +233,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -348,8 +260,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -378,8 +290,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -406,7 +318,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-13.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-13.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -434,7 +346,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-8.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-8.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -461,8 +373,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -490,8 +402,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -518,7 +430,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -547,8 +459,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -575,7 +487,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -610,8 +522,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -638,8 +550,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-10.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-10.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -667,8 +579,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-4.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-4.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -697,7 +609,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -725,7 +637,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -752,8 +664,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -782,8 +694,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -810,7 +722,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-13.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-13.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -838,7 +750,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-8.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-8.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -865,8 +777,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -894,8 +806,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -922,7 +834,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -951,8 +863,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -979,7 +891,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1014,8 +926,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1042,8 +954,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-10.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-10.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1071,8 +983,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-4.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-4.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1101,7 +1013,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1129,7 +1041,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1156,8 +1068,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1186,8 +1098,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1214,7 +1126,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-13.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-13.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1242,7 +1154,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-8.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-8.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1269,8 +1181,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1298,8 +1210,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1326,7 +1238,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1355,8 +1267,8 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-3.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-3.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1383,7 +1295,7 @@
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <ul class="product-meta">
                                         <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -1427,37 +1339,37 @@
                         <div class="special-products-gallery d-flex mt-50">
                             <div class="products-gallery-thumb">
                                 <ul class="products-thumb">
-                                    <li><img src="~/assets/images/special-products/special-products-1.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-2.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-3.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-4.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-5.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-1.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-2.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-3.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-4.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-5.jpg" alt="Products Thumb"></li>
                                 </ul>
                             </div> <!-- products gallery thumb -->
                             <div class="products-gallery-image">
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-1.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-1.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-2.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-2.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-3.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-3.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-4.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-4.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-5.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-5.jpg" alt="products">
                                     </a>
                                 </div>
                             </div> <!-- products gallery image -->
@@ -1500,37 +1412,37 @@
                         <div class="special-products-gallery d-flex mt-50">
                             <div class="products-gallery-thumb">
                                 <ul class="products-thumb">
-                                    <li><img src="~/assets/images/special-products/special-products-5.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-6.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-8.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-7.jpg" alt="Products Thumb"></li>
-                                    <li><img src="~/assets/images/special-products/special-products-4.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-5.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-6.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-8.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-7.jpg" alt="Products Thumb"></li>
+                                    <li><img src="~/images/special-products/special-products-4.jpg" alt="Products Thumb"></li>
                                 </ul>
                             </div> <!-- products gallery thumb -->
                             <div class="products-gallery-image">
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-5.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-5.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-6.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-6.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-8.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-8.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-7.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-7.jpg" alt="products">
                                     </a>
                                 </div>
                                 <div class="single-products-image">
                                     <a href="#">
-                                        <img src="~/assets/images/special-products/special-products-4.jpg" alt="products">
+                                        <img src="~/images/special-products/special-products-4.jpg" alt="products">
                                     </a>
                                 </div>
                             </div> <!-- products gallery image -->
@@ -1601,7 +1513,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <span class="discount-product">-12%</span>
                                 </div>
@@ -1624,7 +1536,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1646,8 +1558,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1668,7 +1580,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1690,8 +1602,8 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1712,7 +1624,7 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1734,8 +1646,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1756,8 +1668,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-4.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-4.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1779,7 +1691,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1800,8 +1712,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1829,7 +1741,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <span class="discount-product">-12%</span>
                                 </div>
@@ -1852,7 +1764,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1874,8 +1786,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1896,7 +1808,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1918,8 +1830,8 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1940,7 +1852,7 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1962,8 +1874,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -1984,8 +1896,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-4.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-4.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2007,7 +1919,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2028,8 +1940,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2057,7 +1969,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                     <span class="discount-product">-12%</span>
                                 </div>
@@ -2080,7 +1992,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-12.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-12.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2102,8 +2014,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-1.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2124,7 +2036,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-5.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-5.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2146,8 +2058,8 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-6.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-7.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-6.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-7.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2168,7 +2080,7 @@
                             <div class="single-product product-list d-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-2.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2190,8 +2102,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-16.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-6.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-16.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-6.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2212,8 +2124,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-4.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-9.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-4.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-9.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2235,7 +2147,7 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-11.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-11.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2256,8 +2168,8 @@
                             <div class="single-product product-list d-sm-flex flex-wrap align-items-center mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img class="first-image" src="~/assets/images/product/product-14.jpg" alt="product">
-                                        <img class="second-image" src="~/assets/images/product/product-15.jpg" alt="product">
+                                        <img class="first-image" src="~/images/product/product-14.jpg" alt="product">
+                                        <img class="second-image" src="~/images/product/product-15.jpg" alt="product">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -2291,49 +2203,49 @@
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-1.jpg" alt="brand">
+                        <img src="~/images/brand/brand-1.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-2.jpg" alt="brand">
+                        <img src="~/images/brand/brand-2.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-3.jpg" alt="brand">
+                        <img src="~/images/brand/brand-3.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                        <img src="~/images/brand/brand-4.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-5.jpg" alt="brand">
+                        <img src="~/images/brand/brand-5.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-6.jpg" alt="brand">
+                        <img src="~/images/brand/brand-6.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
             <div class="col-lg-2">
                 <div class="single-brand">
                     <a href="#">
-                        <img src="~/assets/images/brand/brand-4.jpg" alt="brand">
+                        <img src="~/images/brand/brand-4.jpg" alt="brand">
                     </a>
                 </div> <!-- single brand -->
             </div>
@@ -2349,7 +2261,7 @@
         <div class="features-banner-wrapper d-flex flex-wrap">
             <div class="single-features-banner d-flex">
                 <div class="banner-icon">
-                    <img src="~/assets/images/banner-icon/icon1.png" alt="Icon">
+                    <img src="~/images/banner-icon/icon1.png" alt="Icon">
                 </div>
                 <div class="banner-content media-body">
                     <h3 class="banner-title">Free Shipping</h3>
@@ -2358,7 +2270,7 @@
             </div> <!-- single features banner -->
             <div class="single-features-banner d-flex">
                 <div class="banner-icon">
-                    <img src="~/assets/images/banner-icon/icon2.png" alt="Icon">
+                    <img src="~/images/banner-icon/icon2.png" alt="Icon">
                 </div>
                 <div class="banner-content media-body">
                     <h3 class="banner-title">Support 24/7</h3>
@@ -2367,7 +2279,7 @@
             </div> <!-- single features banner -->
             <div class="single-features-banner d-flex">
                 <div class="banner-icon">
-                    <img src="~/assets/images/banner-icon/icon3.png" alt="Icon">
+                    <img src="~/images/banner-icon/icon3.png" alt="Icon">
                 </div>
                 <div class="banner-content media-body">
                     <h3 class="banner-title">100% Money Back</h3>
@@ -2376,7 +2288,7 @@
             </div> <!-- single features banner -->
             <div class="single-features-banner d-flex">
                 <div class="banner-icon">
-                    <img src="~/assets/images/banner-icon/icon4.png" alt="Icon">
+                    <img src="~/images/banner-icon/icon4.png" alt="Icon">
                 </div>
                 <div class="banner-content media-body">
                     <h3 class="banner-title">90 Days Return</h3>
@@ -2385,7 +2297,7 @@
             </div> <!-- single features banner -->
             <div class="single-features-banner d-flex">
                 <div class="banner-icon">
-                    <img src="~/assets/images/banner-icon/icon5.png" alt="Icon">
+                    <img src="~/images/banner-icon/icon5.png" alt="Icon">
                 </div>
                 <div class="banner-content media-body">
                     <h3 class="banner-title">Payment Secure</h3>
@@ -2405,7 +2317,7 @@
             <div class="col-lg-4">
                 <div class="single-blog">
                     <div class="blag-image">
-                        <a href="blog-single-left-sidebar.html"><img src="~/assets/images/blog-1.jpg" alt="Blog"></a>
+                        <a href="blog-single-left-sidebar.html"><img src="~/images/blog-1.jpg" alt="Blog"></a>
                         <p class="meta-date">
                             <span class="day">05</span>
                             <span class="month">Dec</span>
@@ -2420,7 +2332,7 @@
             <div class="col-lg-4">
                 <div class="single-blog">
                     <div class="blag-image">
-                        <a href="blog-single-left-sidebar.html"><img src="~/assets/images/blog-2.jpg" alt="Blog"></a>
+                        <a href="blog-single-left-sidebar.html"><img src="~/images/blog-2.jpg" alt="Blog"></a>
                         <p class="meta-date">
                             <span class="day">05</span>
                             <span class="month">Dec</span>
@@ -2435,7 +2347,7 @@
             <div class="col-lg-4">
                 <div class="single-blog">
                     <div class="blag-image">
-                        <a href="blog-single-left-sidebar.html"><img src="~/assets/images/blog-3.jpg" alt="Blog"></a>
+                        <a href="blog-single-left-sidebar.html"><img src="~/images/blog-3.jpg" alt="Blog"></a>
                         <p class="meta-date">
                             <span class="day">05</span>
                             <span class="month">Dec</span>
@@ -2450,7 +2362,7 @@
             <div class="col-lg-4">
                 <div class="single-blog">
                     <div class="blag-image">
-                        <a href="blog-single-left-sidebar.html"><img src="~/assets/images/blog-4.jpg" alt="Blog"></a>
+                        <a href="blog-single-left-sidebar.html"><img src="~/images/blog-4.jpg" alt="Blog"></a>
                         <p class="meta-date">
                             <span class="day">05</span>
                             <span class="month">Dec</span>
@@ -2469,14 +2381,14 @@
 <!--====== Blog Part Ends ======-->
 <!--====== Testimonial Part Start ======-->
 
-<section class="testimonial-area bg_cover pt-100 pb-100" style="background-image: url(assets/images/bg_testimonial.jpg);">
+<section class="testimonial-area bg_cover pt-100 pb-100" style="background-image: url(~/images/bg_testimonial.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-10">
                 <div class="testimonial-active">
                     <div class="single-testimonial d-sm-flex">
                         <div class="testimonial-author">
-                            <img src="~/assets/images/author-1.png" alt="author">
+                            <img src="~/images/author-1.png" alt="author">
                         </div>
                         <div class="testimonial-content media-body">
                             <p> An has feugiat vivendum, ad vix tacimates accusamus, cum commune lucilius no. Sit at alia civibus indoctum, ea mel regione percipit adipisci. Per modus nostrum vituperata no, eam ne magna solum constituam.</p>
@@ -2486,7 +2398,7 @@
                     </div> <!-- single testimonial -->
                     <div class="single-testimonial d-sm-flex">
                         <div class="testimonial-author">
-                            <img src="~/assets/images/author-1.png" alt="author">
+                            <img src="~/images/author-1.png" alt="author">
                         </div>
                         <div class="testimonial-content media-body">
                             <p> An has feugiat vivendum, ad vix tacimates accusamus, cum commune lucilius no. Sit at alia civibus indoctum, ea mel regione percipit adipisci. Per modus nostrum vituperata no, eam ne magna solum constituam.</p>
@@ -2496,7 +2408,7 @@
                     </div> <!-- single testimonial -->
                     <div class="single-testimonial d-sm-flex">
                         <div class="testimonial-author">
-                            <img src="~/assets/images/author-1.png" alt="author">
+                            <img src="~/images/author-1.png" alt="author">
                         </div>
                         <div class="testimonial-content media-body">
                             <p> An has feugiat vivendum, ad vix tacimates accusamus, cum commune lucilius no. Sit at alia civibus indoctum, ea mel regione percipit adipisci. Per modus nostrum vituperata no, eam ne magna solum constituam.</p>
@@ -2513,7 +2425,7 @@
 <!--====== Testimonial Part Ends ======-->
 <!--====== Newsletter Part Start ======-->
 
-<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(assets/images/bg-newletter.jpg)">
+<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(~/images/bg-newletter.jpg)">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-8">

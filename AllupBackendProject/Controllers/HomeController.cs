@@ -20,9 +20,13 @@ namespace AllupBackendProject.Controllers
         {
             List<Slider> sliders = _context.Sliders.ToList();
             SliderDescription sliderDescription = _context.SliderDescriptions.FirstOrDefault();
+            List<Banner> banners = _context.Banners.ToList();
+            List<Category> categories = _context.Categories.ToList();
             HomeVm homeVm = new HomeVm();
             homeVm.Sliders = sliders;
             homeVm.SliderDescriptions = sliderDescription;
+            homeVm.Banners = banners;
+            homeVm.Categories = categories;
             return View(homeVm);
         }
     }
