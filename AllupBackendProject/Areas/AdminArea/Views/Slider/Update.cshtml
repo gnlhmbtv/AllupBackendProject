@@ -1,0 +1,40 @@
+﻿@model Slider
+@{ ViewData["Title"] = "Update"; }
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img style="width:150px; height:150px" src="~/images/@Model.ImageUrl" />
+            <form class="forms-sample" method="Post">
+                <div class="form-group">
+                    <label asp-for="Photos"></label>
+                    <input asp-for="Photos" class="form-control" accept="image/*" placeholder="Name">
+                    <span asp-validation-for="Photos" class="text-danger"></span>
+                </div>
+                <p>@Model.MainTitle</p>
+                <div class="form-group">
+                    <label asp-for="MainTitle"></label>
+                    <input asp-for="MainTitle" class="form-control" placeholder="MainTitle">
+                    <span asp-validation-for="MainTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>@Model.SubTitle</p>
+                    <label asp-for="SubTitle"></label>
+                    <textarea asp-for="SubTitle" class="form-control" placeholder="SubTitle"></textarea>
+                    <span asp-validation-for="SubTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>@Model.SliderText</p>
+                    <label asp-for="SliderText"></label>
+                    <textarea asp-for="SliderText" class="form-control" placeholder="SliderText"></textarea>
+                    <span asp-validation-for="SliderText" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <a asp-controller="Slider" asp-action="Index" class="btn btn-warning">Go Back</a>
+                </div>
+                <button class="btn btn-light">Update</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

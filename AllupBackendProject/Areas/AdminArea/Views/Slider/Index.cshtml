@@ -19,15 +19,14 @@
                         {
             <tr>
                 <td>
-                    <img style="width:150px; height:150px" src="~/assets/images/@item.ImageUrl" />
+                    <img style="width:150px; height:150px" src="~/images/@item.ImageUrl" />
                 </td>
                 <td>
                     <a asp-controller="Slider" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="mdi mdi-account-remove"></i></a>
-
+                    <a asp-controller="Slider" asp-action="Update" asp-route-id="@item.Id" class="btn btn-inverse-primary"><i class="mdi mdi-account-edit"></i></a>
+                    <a asp-controller="Slider" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info"><i class="mdi mdi-account-details"></i></a>
                 </td>
             </tr>}
-
-
                     </tbody>
                 </table>
             </div>

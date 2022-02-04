@@ -4,7 +4,10 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <img src="~/img/@Model.ImageUrl" />
+            <img src="~/images/@Model.ImageUrl" />
+            <p>@Model.MainTitle</p>
+            <p>@Model.SubTitle</p>
+            <p>@Model.SliderText</p>
         </div>
         <div class="col-6">
             <a asp-controller="Slider" asp-action="Index" class="btn btn-warning">Go Back</a>

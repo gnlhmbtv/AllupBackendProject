@@ -56,6 +56,9 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
 
                 string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images");
                 newSlider.ImageUrl = fileName;
+                newSlider.MainTitle = slider.MainTitle;
+                newSlider.SubTitle = slider.SubTitle;
+                newSlider.SliderText = slider.SliderText;
 
                 await _context.Sliders.AddAsync(newSlider);
                 await _context.SaveChangesAsync();
@@ -89,6 +92,35 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id == null) return NotFound();
+            Slider dbSlider = await _context.Sliders.FindAsync(id);
+            if (dbSlider == null) return NotFound();
+            return View(dbSlider);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int? id, Slider slider)
+        {
+            if (id == null) return NotFound();
+                Slider updatedSlider = _context.Sliders.FirstOrDefault(s => s.Id == slider.Id);
+
+                updatedSlider.MainTitle = slider.MainTitle;
+                updatedSlider.SubTitle = slider.SubTitle;
+                updatedSlider.SliderText = slider.SliderText;
+
+                await _context.SaveChangesAsync();
+                
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null) return NotFound();
+            Slider dbSlider = await _context.Sliders.FindAsync(id);
+            if (dbSlider == null) return NotFound();
+            return View(dbSlider);
         }
     }
 }

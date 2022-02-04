@@ -15,9 +15,9 @@
         <div class="slider-content-wrapper">
             <div class="container-fluid custom-container">
                 <div class="slider-content">
-                    <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@Model.SliderDescriptions.SubTitle</h4>
-                    <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@Model.SliderDescriptions.MainTitle </span> Fulldive VR.</h1>
-                    <p data-animation="fadeInRightBig" data-delay="0.5s" class="slider-text">@Model.SliderDescriptions.SliderText</p>
+                    <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@item.SubTitle</h4>
+                    <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@item.MainTitle </span> Fulldive VR.</h1>
+                    <p data-animation="fadeInRightBig" data-delay="0.5s" class="slider-text">@item.SliderText</p>
                     <a data-animation="zoomIn" data-delay="0.5s" class="main-btn " href="single-product.html">Shop Now</a>
                 </div>
             </div> <!-- container -->
@@ -2381,7 +2381,7 @@
 <!--====== Blog Part Ends ======-->
 <!--====== Testimonial Part Start ======-->
 
-<section class="testimonial-area bg_cover pt-100 pb-100" style="background-image: url(~/images/bg_testimonial.jpg);">
+<section class="testimonial-area bg_cover pt-100 pb-100" style="background-image: url('@Url.Content("~/images/bg_testimonial.jpg")');">
     <div class="container">
         <div class="row">
             <div class="col-lg-10">
@@ -2425,7 +2425,7 @@
 <!--====== Testimonial Part Ends ======-->
 <!--====== Newsletter Part Start ======-->
 
-<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(~/images/bg-newletter.jpg)">
+<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url('@Url.Content("~/images/bg-newletter.jpg")')">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-8">
