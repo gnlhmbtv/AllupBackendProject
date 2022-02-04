@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿@model HomeVm
+<!doctype html>
 <html class="no-js" lang="en">
 
 
@@ -61,7 +62,7 @@
                 <div class="container-fluid custom-container">
                     <div class="header-nav-wrapper d-flex justify-content-between">
                         <div class="header-static-nav">
-                            <p>Get FREE Shipping with <span class="text">$35!</span> Code: FREESHIPPING</p>
+                            <p>@Model.Bio.BioMessage <span class="text">$35!</span> Code: FREESHIPPING</p>
                         </div>
                         <div class="header-menu-nav">
                             <ul class="menu-nav">
@@ -111,7 +112,7 @@
                             <div class="header-logo-contact d-flex  ">
                                 <div class="desktop-logo">
                                     <a href="index.html">
-                                        <img src="~/images/logo.png" alt="Logo">
+                                        <img src="~/images/@Model.Bio.LogoUrl" alt="Logo">
                                     </a>
                                 </div> <!-- desktop logo -->
                             </div>
@@ -122,7 +123,7 @@
                                     <i class="icon ion-ios-telephone-outline"></i>
                                     <div class="phone media-body">
                                         <p>24/7 Support</p>
-                                        <a href="tel:+48500500500">+48 500 500 500</a>
+                                        <a href="tel:+48500500500">@Model.Bio.Number</a>
                                     </div>
                                 </div>
                                 <div class="header-search media-body">

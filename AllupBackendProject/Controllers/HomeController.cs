@@ -22,11 +22,13 @@ namespace AllupBackendProject.Controllers
             SliderDescription sliderDescription = _context.SliderDescriptions.FirstOrDefault();
             List<Banner> banners = _context.Banners.ToList();
             List<Category> categories = _context.Categories.ToList();
+            Bio bio = _context.Bios.FirstOrDefault();
             HomeVm homeVm = new HomeVm();
             homeVm.Sliders = sliders;
             homeVm.SliderDescriptions = sliderDescription;
             homeVm.Banners = banners;
             homeVm.Categories = categories;
+            homeVm.Bio = bio;
             return View(homeVm);
         }
     }

@@ -13,5 +13,6 @@ namespace AllupBackendProject.ViewModels
         public SliderDescription SliderDescriptions { get; set; }
         public List<Banner> Banners { get; set; }
         public List<Category> Categories { get; set; }
+        public Bio Bio { get; set; }
     }
 }
