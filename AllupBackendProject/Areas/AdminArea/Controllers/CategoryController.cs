@@ -102,16 +102,18 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, Category category)
         {
-            if (!ModelState.IsValid) return View();
             bool isExist = _context.Categories.Any(c => c.Name.ToLower() == category.Name.ToLower().Trim());
 
-            Category isExistCategory = _context.Categories.FirstOrDefault(c => c.Id == id);
+            Category isExistCategory = _context.Categories.FirstOrDefault(c => c.Id == category.Id);
 
             if (isExist && !(isExistCategory.Name.ToLower() == category.Name.ToLower().Trim()))
             {
                 ModelState.AddModelError("Name", "There is already have a category with this name.");
                 return View();
             };
+            Category dbCategory = await _context.Categories.FindAsync(id);
+            if (category.Photo != null)
+            {
                 if (!category.Photo.IsImage())
                 {
                     ModelState.AddModelError("Photo", "Please upload only image files");
@@ -122,7 +124,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                     ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
                     return View();
                 }
-                Category dbCategory = await _context.Categories.FindAsync(id);
+                
                 string path = Path.Combine(_env.WebRootPath, "images", dbCategory.ImageUrl);
                 if (System.IO.File.Exists(path))
                 {
@@ -131,12 +133,19 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                 string filename = await category.Photo.SaveImageAsync(_env.WebRootPath, "images");
 
                 dbCategory.ImageUrl = filename;
-                dbCategory.Name = category.Name;
 
-                await _context.SaveChangesAsync();
-
-
+            }
+            dbCategory.Name = category.Name;
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null) return NotFound();
+            Category dbCategory = await _context.Categories.FindAsync(id);
+            if (dbCategory == null) return NotFound();
+            return View(dbCategory);
         }
     }
 }

@@ -4,7 +4,6 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <img style="width:150px; height:150px" src="~/images/@Model.ImageUrl"/>
             <form class="forms-sample" method="Post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label asp-for="Photo"></label>
@@ -12,7 +11,6 @@
                     <span asp-validation-for="Photo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <p>@Model.Name</p>
                     <label asp-for="Name"></label>
                     <textarea asp-for="Name" class="form-control" placeholder="Name"></textarea>
                     <span asp-validation-for="Name" class="text-danger"></span>
