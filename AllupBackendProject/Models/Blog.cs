@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,6 +20,8 @@ namespace AllupBackendProject.Models
         public string HomePageText { get; set; }
         [MaxLength(800)]
         public string BlogText { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
         //public AppUser CreatedByUser { get; set; }
     }
 }

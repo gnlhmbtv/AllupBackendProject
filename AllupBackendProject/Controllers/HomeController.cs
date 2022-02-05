@@ -4,6 +4,7 @@ using AllupBackendProject.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,12 +24,20 @@ namespace AllupBackendProject.Controllers
             List<Banner> banners = _context.Banners.ToList();
             List<Category> categories = _context.Categories.ToList();
             Bio bio = _context.Bios.FirstOrDefault();
+            List<Blog> blogs = _context.Blogs.ToList();
             HomeVm homeVm = new HomeVm();
             homeVm.Sliders = sliders;
             homeVm.SliderDescriptions = sliderDescription;
             homeVm.Banners = banners;
             homeVm.Categories = categories;
             homeVm.Bio = bio;
+            homeVm.Blogs = blogs;
+
+            foreach (var item in blogs)
+            {
+                TempData["MonthName"] = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(item.CreatedAt.Month);
+
+            }
             return View(homeVm);
         }
     }

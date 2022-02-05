@@ -1,0 +1,49 @@
+﻿@model Blog
+@{ ViewData["Title"] = "Create"; }
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Create Blog
+                    </p>
+                    <form class="forms-sample" method="Post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label asp-for="Photo"></label>
+                            <input asp-for="Photo" class="form-control" accept="image/*" placeholder="Name">
+                            <span asp-validation-for="Photo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" placeholder="MainTitle">
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="HomePageText"></label>
+                            <input asp-for="HomePageText" class="form-control" placeholder="SubTitle">
+                            <span asp-validation-for="HomePageText" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BlogText"></label>
+                            <input asp-for="BlogText" class="form-control" placeholder="SliderText">
+                            <span asp-validation-for="BlogText" class="text-danger"></span>
+                        </div>
+
+                        <button class="btn btn-light">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Scripts{
+
+    <partial name="_Validation">
+
+}
+

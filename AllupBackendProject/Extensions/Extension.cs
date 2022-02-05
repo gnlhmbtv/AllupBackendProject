@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,6 +30,10 @@ namespace FrontToBack.Extensions
                 await file.CopyToAsync(fileStream);
             }
             return fileName; 
+        }
+        public static string ToShortMonthName(this DateTime dateTime)
+        {
+            return CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(dateTime.Month);
         }
 
     }
