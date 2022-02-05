@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AllupBackendProject.Models
 {
-    public class Brand
+    public class BrandBanner
     {
         public int Id { get; set; }
         public string Name { get; set; }

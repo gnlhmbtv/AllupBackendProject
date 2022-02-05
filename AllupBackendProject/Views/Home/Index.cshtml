@@ -1,4 +1,4 @@
-﻿@model HomeVm 
+﻿@model HomeVm
 @{
     ViewData["Title"] = "Index";
 }
@@ -7,23 +7,23 @@
 
 <section class="slider-area slider-active">
     @foreach (var item in Model.Sliders)
-	{
-    <div class="single-slider">
-        <div class="slider-image">
-            <img src="~/images/@item.ImageUrl" alt="slider">
+    {
+        <div class="single-slider">
+            <div class="slider-image">
+                <img src="~/images/@item.ImageUrl" alt="slider">
+            </div>
+            <div class="slider-content-wrapper">
+                <div class="container-fluid custom-container">
+                    <div class="slider-content">
+                        <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@item.SubTitle</h4>
+                        <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@item.MainTitle </span> Fulldive VR.</h1>
+                        <p data-animation="fadeInRightBig" data-delay="0.5s" class="slider-text">@item.SliderText</p>
+                        <a data-animation="zoomIn" data-delay="0.5s" class="main-btn " href="single-product.html">Shop Now</a>
+                    </div>
+                </div> <!-- container -->
+            </div>
         </div>
-        <div class="slider-content-wrapper">
-            <div class="container-fluid custom-container">
-                <div class="slider-content">
-                    <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@item.SubTitle</h4>
-                    <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@item.MainTitle </span> Fulldive VR.</h1>
-                    <p data-animation="fadeInRightBig" data-delay="0.5s" class="slider-text">@item.SliderText</p>
-                    <a data-animation="zoomIn" data-delay="0.5s" class="main-btn " href="single-product.html">Shop Now</a>
-                </div>
-            </div> <!-- container -->
-        </div>
-    </div>
-	} <!-- single slider -->
+    } <!-- single slider -->
     <!--<div class="single-slider">
         <div class="slider-image">
             <img src="~/images/slider-2.jpg" alt="slider">
@@ -36,9 +36,11 @@
                     <p data-animation="fadeInRightBig" data-delay="0.5s">Explore and immerse in exciting 360 content with Fulldive’s all-in-one virtual reality platform</p>
                     <a data-animation="zoomIn" data-delay="0.5s" class="main-btn " href="single-product.html">Shop Now</a>
                 </div>
-            </div>--> <!-- container -->
-        <!--</div>
-    </div>--> <!-- single slider -->
+            </div>-->
+    <!-- container -->
+    <!--</div>
+    </div>-->
+    <!-- single slider -->
 </section>
 
 <!--====== Slider Part Ends ======-->
@@ -48,14 +50,14 @@
     <div class="container-fluid custom-container">
         <div class="row">
             @foreach (var item in Model.Banners)
-	            {
-		  <div class="col-md-6">
-                <div class="banner-image">
-                    <a href="shop-4-column.html"><img src="~/images/@item.PhotoUrl" alt="banner"></a>
-                </div> <!-- banner image -->
-            </div>
-	            }
-           
+            {
+                <div class="col-md-6">
+                    <div class="banner-image">
+                        <a href="shop-4-column.html"><img src="~/images/@item.PhotoUrl" alt="banner"></a>
+                    </div> <!-- banner image -->
+                </div>
+            }
+
         </div> <!-- row -->
     </div> <!-- container -->
 </div>
@@ -142,7 +144,6 @@
                                     </div>
                                 </div>
                             </div> <!-- single product -->
-
                             <div class="single-product mt-30">
                                 <div class="product-image">
                                     <a href="single-product.html">
@@ -2197,11 +2198,11 @@
 <!--====== Product Part Ends ======-->
 <!--====== Brand Part Start ======-->
 
-    @await Component.InvokeAsync("Brands");
+@await Component.InvokeAsync("Brands");
 <!--====== Brand Part Ends ======-->
 <!--====== Features Banner Part Start ======-->
 
-    @await Component.InvokeAsync("Features");
+@await Component.InvokeAsync("Features");
 
 <!--====== Features Banner Part Ends ======-->
 <!--====== Blog Part Start ======-->
@@ -2320,23 +2321,6 @@
 <!--====== Testimonial Part Ends ======-->
 <!--====== Newsletter Part Start ======-->
 
-<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url('@Url.Content("~/images/bg-newletter.jpg")')">
-    <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-lg-8">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">Subscribe our newsletter</h2>
-                    <p>allup is a powerful eCommerce HTML Template</p>
-                    <div class="newsletter-forn">
-                        <form action="#">
-                            <input type="text" placeholder="Your Email address">
-                            <button class="main-btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div> <!-- newsletter content -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
+@await Component.InvokeAsync("Mails");
 
 <!--====== Newsletter Part Ends ======-->

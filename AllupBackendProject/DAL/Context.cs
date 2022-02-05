@@ -19,7 +19,12 @@ namespace AllupBackendProject.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Bio> Bios { get; set; }
-        public DbSet<Brand> Brands { get; set; }
+        public DbSet<BrandBanner> Brands { get; set; }
+        public DbSet<Mail> Mails { get; set; }
+
+
+
+
         public DbSet<Feature> Features { get; set; }
 
     }

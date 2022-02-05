@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace AllupBackendProject.ViewComponents
 {
-    public class BrandsViewComponent : ViewComponent
+    public class MailsViewComponent : ViewComponent
     {
         private readonly Context _context;
-        public BrandsViewComponent(Context context)
+        public MailsViewComponent(Context context)
         {
             _context = context;
         }
-         public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
-            List<BrandBanner> brand = _context.Brands.ToList();
-            return View(await Task.FromResult(brand));
+            List<Mail> mails = _context.Mails.ToList();
+            return View(await Task.FromResult(mails));
         }
     }
 }

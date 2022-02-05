@@ -32,7 +32,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
             return View();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Create(Slider slider)
         {
             if (ModelState["Photos"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
@@ -70,7 +70,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [AutoValidateAntiforgeryToken]
         [ActionName("Delete")]
         public async Task<IActionResult> DeleteSlider(int? id)
         {
@@ -96,7 +96,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
             return View(dbSlider);
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Update(int? id, Slider slider)
         {
             if (slider.Photos != null)

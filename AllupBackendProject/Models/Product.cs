@@ -16,7 +16,7 @@ namespace AllupBackendProject.Models
         public bool Featured { get; set; }
         public double Price { get; set; }
         public int BrandId { get; set; }
-        public virtual Brand Brand { get; set; }
+        public virtual BrandBanner Brand { get; set; }
         public int Count { get; set; }
         //public List<SalesProduct> SalesProducts { get; set; }
     }
