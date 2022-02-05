@@ -154,3 +154,8 @@ C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\net
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Brand\Delete.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Brand\Update.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Brand\Detail.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Feature\Index.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Feature\Create.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Feature\Delete.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Feature\Update.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Feature\Detail.cshtml.g.cs

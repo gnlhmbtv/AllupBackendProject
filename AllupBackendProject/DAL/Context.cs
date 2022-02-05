@@ -21,11 +21,8 @@ namespace AllupBackendProject.DAL
         public DbSet<Bio> Bios { get; set; }
         public DbSet<BrandBanner> Brands { get; set; }
         public DbSet<Mail> Mails { get; set; }
-
-
-
-
         public DbSet<Feature> Features { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
 
     }
 }

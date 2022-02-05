@@ -1,0 +1,17 @@
+﻿@model Feature
+@{ ViewData["Title"] = "Detail"; }
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img style="width:250px; height:150px" src="~/banner-icon/@Model.ImageUrl" /><br />
+            <span>Feature Title:</span>
+            <p>@Model.BannerTitle</p>
+            <span>Feature Text:</span>
+            <p>@Model.BannerText</p>
+            <div class="col-6">
+                <a asp-controller="Feature" asp-action="Index" class="btn btn-warning">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
