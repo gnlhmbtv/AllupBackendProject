@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Brand>
+
+    <div class="brand-area pt-80">
+        <div class="container-fluid custom-container">
+            <div class="row brand-active">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-2">
+                        <div class="single-brand">
+                            <a href="#">
+                                <img src="~/images/brand/@item.ImageUrl" alt="brand">
+                            </a>
+                        </div> <!-- single brand -->
+                    </div>
+                }
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>

@@ -2197,116 +2197,11 @@
 <!--====== Product Part Ends ======-->
 <!--====== Brand Part Start ======-->
 
-<div class="brand-area pt-80">
-    <div class="container-fluid custom-container">
-        <div class="row brand-active">
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-1.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-2.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-3.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-4.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-5.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-6.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-            <div class="col-lg-2">
-                <div class="single-brand">
-                    <a href="#">
-                        <img src="~/images/brand/brand-4.jpg" alt="brand">
-                    </a>
-                </div> <!-- single brand -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</div>
-
+    @await Component.InvokeAsync("Brands");
 <!--====== Brand Part Ends ======-->
 <!--====== Features Banner Part Start ======-->
 
-<section class="features-banner-area pt-80 pb-100">
-    <div class="container-fluid custom-container">
-        <div class="features-banner-wrapper d-flex flex-wrap">
-            <div class="single-features-banner d-flex">
-                <div class="banner-icon">
-                    <img src="~/images/banner-icon/icon1.png" alt="Icon">
-                </div>
-                <div class="banner-content media-body">
-                    <h3 class="banner-title">Free Shipping</h3>
-                    <p>Free shipping on all US order</p>
-                </div>
-            </div> <!-- single features banner -->
-            <div class="single-features-banner d-flex">
-                <div class="banner-icon">
-                    <img src="~/images/banner-icon/icon2.png" alt="Icon">
-                </div>
-                <div class="banner-content media-body">
-                    <h3 class="banner-title">Support 24/7</h3>
-                    <p>Contact us 24 hours a day</p>
-                </div>
-            </div> <!-- single features banner -->
-            <div class="single-features-banner d-flex">
-                <div class="banner-icon">
-                    <img src="~/images/banner-icon/icon3.png" alt="Icon">
-                </div>
-                <div class="banner-content media-body">
-                    <h3 class="banner-title">100% Money Back</h3>
-                    <p>You have 30 days to Return</p>
-                </div>
-            </div> <!-- single features banner -->
-            <div class="single-features-banner d-flex">
-                <div class="banner-icon">
-                    <img src="~/images/banner-icon/icon4.png" alt="Icon">
-                </div>
-                <div class="banner-content media-body">
-                    <h3 class="banner-title">90 Days Return</h3>
-                    <p>If goods have problems</p>
-                </div>
-            </div> <!-- single features banner -->
-            <div class="single-features-banner d-flex">
-                <div class="banner-icon">
-                    <img src="~/images/banner-icon/icon5.png" alt="Icon">
-                </div>
-                <div class="banner-content media-body">
-                    <h3 class="banner-title">Payment Secure</h3>
-                    <p>We ensure secure payment</p>
-                </div>
-            </div> <!-- single features banner -->
-        </div> <!-- features banner wrapper -->
-    </div> <!-- container -->
-</section>
+    @await Component.InvokeAsync("Features");
 
 <!--====== Features Banner Part Ends ======-->
 <!--====== Blog Part Start ======-->
@@ -2432,7 +2327,6 @@
                 <div class="newsletter-content">
                     <h2 class="newsletter-title">Subscribe our newsletter</h2>
                     <p>allup is a powerful eCommerce HTML Template</p>
-
                     <div class="newsletter-forn">
                         <form action="#">
                             <input type="text" placeholder="Your Email address">

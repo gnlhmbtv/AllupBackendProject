@@ -146,3 +146,5 @@ C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\net
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Delete.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Update.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Detail.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Brands\Default.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Features\Default.cshtml.g.cs

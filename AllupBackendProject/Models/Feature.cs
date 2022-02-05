@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace AllupBackendProject.Models
 {
-    public class Brand
+    public class Feature
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string  ImageUrl { get; set; }
-        [NotMapped]
+        public string BannerTitle { get; set; }
+        public string BannerText { get; set; }
+        public string ImageUrl { get; set; }
+        [NotMapped] 
         [Required]
         public IFormFile Photo { get; set; }
     }
