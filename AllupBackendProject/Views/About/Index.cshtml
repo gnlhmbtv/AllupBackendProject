@@ -1,0 +1,53 @@
+﻿@model AboutVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--====== About Part Start ======-->
+
+<section class="about-page pt-20">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-image mt-30">
+                    <img src="~/images/@Model.About.ImageUrl" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content mt-30">
+                    <h2 class="title">@Model.About.Title</h2>
+                    <p>@Model.About.Description</p>
+                </div>
+            </div>
+        </div> <!-- row -->
+        <div class="about-items pt-20">
+            <div class="row">
+                @for (int i = 1; i < Model.Abouts.Count; i++)
+                {
+                    <div class="col-lg-4">
+                        <div class="about-item mt-30">
+                            <h4 class="title">@Model.Abouts[i].Title</h4>
+                            <p>@Model.Abouts[i].Description</p>
+                        </div> <!-- about item -->
+                    </div>
+                }
+            </div> <!-- row -->
+        </div>  <!-- about items -->
+    </div> <!-- container -->
+</section>
+
+<!--====== About Part Ends ======-->
+<!--====== Brand Part Start ======-->
+
+@await Component.InvokeAsync("Brands");
+<!--====== Brand Part Ends ======-->
+<!--====== Features Banner Part Start ======-->
+
+@await Component.InvokeAsync("Features");
+
+<!--====== Features Banner Part Ends ======-->
+<!--====== Newsletter Part Start ======-->
+
+@await Component.InvokeAsync("Mails");
+
+<!--====== Newsletter Part Ends ======-->
