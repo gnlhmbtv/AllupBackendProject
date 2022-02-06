@@ -1,0 +1,30 @@
+﻿@model Contact
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Basic Table</h4>
+            <p class="card-description">
+                <a class="btn btn-primary" asp-controller="Contact" asp-action="Create"> Create Contact</a>
+            </p>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            <tr>
+                <td>
+                    <a asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger"><i class="mdi mdi-account-remove"></i></a>
+                    <a asp-controller="Contact" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-inverse-primary"><i class="mdi mdi-account-edit"></i></a>
+                    <a asp-controller="Contact" asp-action="Detail" asp-route-id="@Model.Id" class="btn btn-info"><i class="mdi mdi-account-details"></i></a>
+                </td>
+            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

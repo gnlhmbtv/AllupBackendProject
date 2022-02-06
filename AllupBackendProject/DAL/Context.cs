@@ -1,4 +1,5 @@
 ﻿using AllupBackendProject.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AllupBackendProject.DAL
 {
-    public class Context:DbContext
+    public class Context:IdentityDbContext<AppUser>
     {
         public Context(DbContextOptions<Context>options):base(options)
         {
@@ -23,6 +24,8 @@ namespace AllupBackendProject.DAL
         public DbSet<Mail> Mails { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
     }
 }

@@ -15,5 +15,6 @@ namespace AllupBackendProject.ViewModels
         public List<Category> Categories { get; set; }
         public Bio Bio { get; set; }
         public List<Blog> Blogs { get; set; }
+        public Contact Contact { get; set; }
     }
 }

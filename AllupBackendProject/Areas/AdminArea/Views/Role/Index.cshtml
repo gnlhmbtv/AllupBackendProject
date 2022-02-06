@@ -1,0 +1,13 @@
+﻿
+@*@model IList<IdentityRole>*@
+@{ 
+    ViewData["Title"] = "Index"; 
+}
+
+
+@foreach (var item in Model)
+{
+<p>@item.Name</p>
+}
+
+
