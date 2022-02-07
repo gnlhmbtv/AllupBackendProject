@@ -3,6 +3,7 @@ using AllupBackendProject.Models;
 using FrontToBack.Extensions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,45 +24,101 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> categories = _context.Categories.ToList();
+            List<Category> categories = _context.Categories.Include(x => x.BrandCategories).ThenInclude(x => x.ProductBrand).ToList();
             return View(categories);
         }
-        public IActionResult Create()
+        public async Task<ActionResult> Active(int? id)
         {
+            if (id == null) return NotFound();
+            Category dbCategory = await _context.Categories.FindAsync(id);
+            if (dbCategory == null) return NotFound();
+            dbCategory.IsDeleted = false;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+
+        }
+        public ActionResult Create()
+        {
+            List<Category> MainCategory = _context.Categories.Where(x => x.IsMain == true && x.IsDeleted == false).ToList();
+            ViewBag.Category = MainCategory;
             return View();
         }
+        
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Create(Category category)
         {
-            if (!ModelState.IsValid) return NotFound();
-            bool isExist = _context.Categories.Any(c => c.Name.ToLower().Trim() == category.Name.ToLower().Trim());
+            bool isExist = _context.Categories.Any(c => c.Name.ToLower() == category.Name.ToLower().Trim());
+
             if (isExist)
             {
-                ModelState.AddModelError("Name", "There is already have this category");
+                ModelState.AddModelError("Name", "This category is already exists");
+                return RedirectToAction("Index");
+
             }
+            if (!category.IsMain)
+            {
+                Category subCategory = new Category();
+                List<Category> db = _context.Categories.Where(c => c.Id == category.MainCategory.Id).ToList();
+
+
+                subCategory.MainCategory = db.FirstOrDefault();
+                subCategory.Name = category.Name;
+
+                if (subCategory.MainCategory == null)
+                {
+
+                    return NotFound();
+
+                }
+                await _context.Categories.AddAsync(subCategory);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            }
+            if (ModelState["Photo"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
+            {
+                ModelState.AddModelError("Photo", "Do not empty");
+            }
+
             if (!category.Photo.IsImage())
             {
-                ModelState.AddModelError("Photo", "Please upload only image files");
-                return View();
+                ModelState.AddModelError("Image", "only image");
+                return RedirectToAction("Index");
+
             }
             if (category.Photo.IsCorrectSize(300))
             {
-                ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
-                return View();
+                ModelState.AddModelError("Image", "please enter photo under 300kb");
+                return RedirectToAction("Index");
             }
 
+
+
             string fileName = await category.Photo.SaveImageAsync(_env.WebRootPath, "images");
-            Category newCategory = new Category()
+            Category mainCategory = new Category
             {
                 Name = category.Name,
-                ImageUrl = fileName
+                IsMain = category.IsMain,
+                IsFeatured = category.IsFeatured,
+                ImageUrl = fileName,
             };
 
-            await _context.Categories.AddAsync(newCategory);
+            await _context.Categories.AddAsync(mainCategory);
             await _context.SaveChangesAsync();
 
+
+
             return RedirectToAction(nameof(Index));
+
+        }
+
+        public async Task<ActionResult> Details(int? id)
+        {
+            if (id == null) return NotFound();
+            Category dbCategory = await _context.Categories.FindAsync(id);
+            if (dbCategory == null) return NotFound();
+            return View(dbCategory);
         }
 
         public async Task<IActionResult> Delete(int? id)
@@ -74,70 +131,101 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [ActionName("Delete")]
-        public async Task<IActionResult> DeleteCategory(int? id)
+        public async Task<ActionResult> Delete(int? id, Category category)
         {
             if (id == null) return NotFound();
             Category dbCategory = await _context.Categories.FindAsync(id);
             if (dbCategory == null) return NotFound();
-
-            string path = Path.Combine(_env.WebRootPath, "images", dbCategory.ImageUrl);
-            if (System.IO.File.Exists(path))
+            if (dbCategory.IsMain)
             {
-                System.IO.File.Delete(path);
+                bool isSubcategory = _context.Categories.Any(c => c.MainCategory.Id == category.Id);
+                if (isSubcategory)
+                {
+                    dbCategory.IsDeleted = true;
+                }
+                else
+                {
+                    string path = Path.Combine(_env.WebRootPath, "images/", dbCategory.ImageUrl);
+                    if (System.IO.File.Exists(path))
+                    {
+                        System.IO.File.Delete(path);
+                    }
+                    _context.Categories.Remove(dbCategory);
+
+                }
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
             }
+
+
             _context.Categories.Remove(dbCategory);
             await _context.SaveChangesAsync();
-
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Update(int? id)
+        public async Task<ActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
             Category dbCategory = await _context.Categories.FindAsync(id);
             if (dbCategory == null) return NotFound();
+
+            List<Category> MainCategory = _context.Categories.Where(x => x.IsMain == true && x.IsDeleted == false).ToList();
+            ViewBag.Category = MainCategory;
+
             return View(dbCategory);
         }
         [HttpPost]
-        public async Task<IActionResult> Update(int? id, Category category)
+        public async Task<ActionResult> Edit(int? id, Category category)
         {
             bool isExist = _context.Categories.Any(c => c.Name.ToLower() == category.Name.ToLower().Trim());
+            Category newCategory = await _context.Categories.FindAsync(id);
 
-            Category isExistCategory = _context.Categories.FirstOrDefault(c => c.Id == category.Id);
-
-            if (isExist && !(isExistCategory.Name.ToLower() == category.Name.ToLower().Trim()))
+            if (isExist && !(newCategory.Name.ToLower() == category.Name.ToLower().Trim()))
             {
-                ModelState.AddModelError("Name", "There is already have a category with this name.");
+                ModelState.AddModelError("Name", "There is already has a category with this name");
                 return View();
             };
-            Category dbCategory = await _context.Categories.FindAsync(id);
+
+            if (!category.IsMain)
+            {
+                newCategory.MainCategory = await _context.Categories.FindAsync(category.MainCategory.Id);
+                newCategory.Name = category.Name;
+
+            }
             if (category.Photo != null)
             {
+                if (ModelState["Photo"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
+                {
+                    ModelState.AddModelError("Photo", "Do not empty");
+                }
+
                 if (!category.Photo.IsImage())
                 {
-                    ModelState.AddModelError("Photo", "Please upload only image files");
+                    ModelState.AddModelError("Image", "Please only upload files with image type.");
                     return View();
                 }
                 if (category.Photo.IsCorrectSize(300))
                 {
-                    ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
+                    ModelState.AddModelError("Image", "Image size cannot be more than 300");
                     return View();
                 }
-                
-                string path = Path.Combine(_env.WebRootPath, "images", dbCategory.ImageUrl);
+                string path = Path.Combine(_env.WebRootPath, "images", newCategory.ImageUrl);
                 if (System.IO.File.Exists(path))
                 {
                     System.IO.File.Delete(path);
                 }
-                string filename = await category.Photo.SaveImageAsync(_env.WebRootPath, "images");
-
-                dbCategory.ImageUrl = filename;
+                string fileName = await category.Photo.SaveImageAsync(_env.WebRootPath, "images");
+                newCategory.IsFeatured = category.IsFeatured;
+                newCategory.ImageUrl = fileName;
 
             }
-            dbCategory.Name = category.Name;
+            newCategory.Name = category.Name;
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return RedirectToAction("Index");
+
         }
 
         public async Task<IActionResult> Detail(int? id)

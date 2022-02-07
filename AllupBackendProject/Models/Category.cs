@@ -11,10 +11,16 @@ namespace AllupBackendProject.Models
     public class Category
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        public bool IsMain { get; set; }
+        public bool IsFeatured { get; set; }
+        public bool IsDeleted { get; set; }
+        public List<Category> SubCategory { get; set; }
+        public Category MainCategory { get; set; }
+        public List<BrandCategory> BrandCategories { get; set; }
         public string ImageUrl { get; set; }
         [NotMapped]
-        [Required]
         public IFormFile Photo { get; set; }
     }
 }
