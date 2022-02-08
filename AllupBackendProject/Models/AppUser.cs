@@ -10,5 +10,6 @@ namespace AllupBackendProject.Models
     {
         public string FullName { get; set; }
         public bool IsSubscribe { get; set; }
+        public List<Message> Messages { get; set; }
     }
 }

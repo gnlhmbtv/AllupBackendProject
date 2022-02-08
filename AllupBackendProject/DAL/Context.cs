@@ -29,6 +29,7 @@ namespace AllupBackendProject.DAL
         public DbSet<About> About { get; set; }
         public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<BrandCategory> BrandCategories { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
     }
 }

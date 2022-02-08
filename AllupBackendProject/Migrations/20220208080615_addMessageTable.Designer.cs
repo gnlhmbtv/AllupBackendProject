@@ -4,14 +4,16 @@ using AllupBackendProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AllupBackendProject.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220208080615_addMessageTable")]
+    partial class addMessageTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -590,7 +592,7 @@ namespace AllupBackendProject.Migrations
             modelBuilder.Entity("AllupBackendProject.Models.Message", b =>
                 {
                     b.HasOne("AllupBackendProject.Models.AppUser", "User")
-                        .WithMany("Messages")
+                        .WithMany()
                         .HasForeignKey("UserId");
                 });
 

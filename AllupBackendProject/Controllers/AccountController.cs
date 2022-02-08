@@ -123,5 +123,11 @@ namespace AllupBackendProject.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult CheckSignIn()
+        {
+            return Content(User.Identity.IsAuthenticated.ToString());
+        }
+
+
     }
 }

@@ -6,7 +6,9 @@
 
 <h1>Edit</h1>
 
-<h4>ProductBrand</h4>
+<h1>Edit</h1>
+
+<h4>Brand</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,24 +20,28 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-             @foreach (var item in ViewBag.IsMainCategory)
+            @foreach (var item in ViewBag.noneCheck)
             {
                 <div class="d-flex align-items-stretch">
                     <div class="form-group form-check d-flex">
-                        <h5>@item.Name</h5>
+                        <h5></h5>
                     </div>
                 </div>
-                @foreach (var itemsub in ViewBag.SubCategory)
-                {
-                    @if (itemsub.MainCategory.Id == item.Id)
-                    {
-                        <div class="form-group form-check d-flex">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input subcategory" name="subcategory" value="@itemsub.Id" />@itemsub.Name
-                            </label>
-                        </div>
-                    }
-                }
+                <div class="form-group form-check d-flex">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input subcategory" name="subcategory" value="@item.Id" />@item.Name
+                    </label>
+                </div>
+
+
+            }
+            @foreach (var item in ViewBag.checkCategory)
+            {
+                <div class="form-group form-check d-flex">
+                    <label class="form-check-label">
+                        <input type="checkbox" checked class="form-check-input subcategory" name="subcategory" value="@item.Id" />@item.Category.Name
+                    </label>
+                </div>
 
             }
             <div class="form-group">
@@ -46,6 +52,5 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-outline-warning">Back to List</a>
 </div>
-
