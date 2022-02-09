@@ -25,19 +25,19 @@ namespace AllupBackendProject.Controllers
 
         public async Task<IActionResult> Index()
         {
-            ContactVM contactVM = new ContactVM();
-            string userId = "";
-
+            Contact contact = _context.Contacts.FirstOrDefault();
+            //List<CompanySlider> companySliders = _context.CompanySliders.ToList();
+            //List<Service> services = _context.Services.ToList();
+            //ViewData["CompanySliders"] = companySliders;
+            //ViewData["Services"] = services;
+            ContactVM contactVm = new ContactVM();
             if (User.Identity.IsAuthenticated)
             {
-                userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-                contactVM.User = await _userManager.FindByIdAsync(userId);
+                contactVm.User = await _userManager.FindByIdAsync(HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
             }
-
-            Contact contact = _context.Contacts.FirstOrDefault();
-            contactVM.Contact = contact;
-
-            return View(contactVM);
+            contactVm.Contact = contact;
+            return View(contactVm);
         }
 
         [Authorize]

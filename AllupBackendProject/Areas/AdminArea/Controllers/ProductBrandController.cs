@@ -99,8 +99,8 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(int id, ProductBrand brand, int[] subcategory)
-        {
-            bool isExist = _context.Brands.Any(c => c.Name.ToLower() == brand.Name.ToLower().Trim());
+        {   
+            bool isExist = _context.ProductBrands.Any(c => c.Name.ToLower() == brand.Name.ToLower().Trim());
             ProductBrand newBrand = await _context.ProductBrands.FindAsync(id);
 
             if (isExist && !(newBrand.Name.ToLower() == brand.Name.ToLower().Trim()))

@@ -12,5 +12,6 @@ namespace AllupBackendProject.Models
         [Required(ErrorMessage = "Can't be empty")]
         public string Name { get; set; }
         public List<BrandCategory> BrandCategories { get; set; }
+        public virtual List<Product> Products { get; set; }
     }
 }
