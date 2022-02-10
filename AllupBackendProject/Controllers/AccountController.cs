@@ -108,14 +108,15 @@ namespace AllupBackendProject.Controllers
                 return View();
             }
 
-            //var roles = await _userManager.GetRolesAsync(dbUser);
-            //if (roles[0] == "Admin")
-            //{
-            //    return RedirectToAction("Index", "Dashboard", new { area = "AdminArea" });
-            //}
+            var roles = await _userManager.GetRolesAsync(dbUser);
+            if (roles[0] == "Admin")
+            {
+                return RedirectToAction("Index", "Dashboard", new { area = "AdminArea" });
+            }
 
             return RedirectToAction("Index", "Home");
         }
+
 
         public async Task<IActionResult> LogOut()
         {

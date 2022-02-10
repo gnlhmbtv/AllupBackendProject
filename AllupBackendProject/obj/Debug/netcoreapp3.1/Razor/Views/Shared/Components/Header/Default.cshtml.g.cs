@@ -26,8 +26,15 @@ using AllupBackendProject.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ef3151dad357799dd467a661ff595ea11e7e61a2", @"/Views/Shared/Components/Header/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12da6163f2d7871c017c18914b9841d28600e0b6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b7d87adf098acc6f4ebc559cff82bcd88f36aa1e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Header_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Bio>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Account", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -215,7 +222,7 @@ using AllupBackendProject.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a242893", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a243104", async() => {
                 WriteLiteral("Sign In<i class=\"icon ion-chevron-down\"></i>");
             }
             );
@@ -278,7 +285,7 @@ using AllupBackendProject.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                                            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a246588", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a246799", async() => {
                 WriteLiteral("Sign in");
             }
             );
@@ -306,7 +313,7 @@ using AllupBackendProject.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("                                            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a248361", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a248572", async() => {
                 WriteLiteral("Sign out");
             }
             );
@@ -348,7 +355,7 @@ using AllupBackendProject.ViewModels;
                             <li>
                                 <div class=""dropdown"">
                                     <button type=""button"" id=""langue"" data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a251016", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a251227", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -363,7 +370,7 @@ using AllupBackendProject.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" English <i class=\"icon ion-chevron-down\"></i></button>\r\n\r\n                                    <ul class=\"dropdown-menu\" aria-labelledby=\"langue\">\r\n                                        <li><a href=\"#\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a252345", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a252556", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -378,7 +385,7 @@ using AllupBackendProject.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" English</a></li>\r\n                                        <li><a href=\"#\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a253535", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a253746", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -410,7 +417,7 @@ using AllupBackendProject.ViewModels;
                             <div class=""desktop-logo"">
                                 <a href=""index.html"">
                                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a255404", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a255615", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -453,9 +460,9 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
 #line hidden
 #nullable disable
             WriteLiteral("</a>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"header-search media-body\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a258146", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a258357", async() => {
                 WriteLiteral("\r\n                                    <div class=\"search-category\">\r\n                                        <select>\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a258572", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a258783", async() => {
                     WriteLiteral("All categories");
                 }
                 );
@@ -471,7 +478,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a259850", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a260061", async() => {
                     WriteLiteral("Laptop");
                 }
                 );
@@ -487,7 +494,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a261120", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a261331", async() => {
                     WriteLiteral("- - Hot Categories");
                 }
                 );
@@ -503,7 +510,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a262402", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a262613", async() => {
                     WriteLiteral("- - - - Dresses");
                 }
                 );
@@ -519,7 +526,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a263681", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a263892", async() => {
                     WriteLiteral("- - - - Jackets &amp; Coats");
                 }
                 );
@@ -535,7 +542,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a264972", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a265183", async() => {
                     WriteLiteral("- - - - Sweaters");
                 }
                 );
@@ -551,7 +558,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a266252", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a266463", async() => {
                     WriteLiteral("- - - - Jeans");
                 }
                 );
@@ -567,7 +574,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a267529", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a267740", async() => {
                     WriteLiteral("- - - - Blouses &amp; Shirts");
                 }
                 );
@@ -583,7 +590,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a268821", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a269032", async() => {
                     WriteLiteral("- - Outerwear &amp; Jackets");
                 }
                 );
@@ -599,7 +606,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a270112", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a270323", async() => {
                     WriteLiteral("- - - - Basic Jackets");
                 }
                 );
@@ -615,7 +622,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a271397", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a271608", async() => {
                     WriteLiteral("- - - - Real Fur");
                 }
                 );
@@ -631,7 +638,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a272677", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a272888", async() => {
                     WriteLiteral("- - - - Down Coats");
                 }
                 );
@@ -647,7 +654,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a273959", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a274170", async() => {
                     WriteLiteral("- - - - Blazers");
                 }
                 );
@@ -663,7 +670,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a275238", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a275449", async() => {
                     WriteLiteral("- - - - Trench Coats");
                 }
                 );
@@ -679,7 +686,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a276522", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a276733", async() => {
                     WriteLiteral("- - Weddings &amp; Events");
                 }
                 );
@@ -695,7 +702,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a277811", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a278022", async() => {
                     WriteLiteral("- - - - Wedding Dresses");
                 }
                 );
@@ -711,7 +718,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a279098", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a279309", async() => {
                     WriteLiteral("- - - - Evening Dresses");
                 }
                 );
@@ -727,7 +734,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a280385", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a280596", async() => {
                     WriteLiteral("- - - - Prom Dresses");
                 }
                 );
@@ -743,7 +750,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a281669", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a281880", async() => {
                     WriteLiteral("- - - - Bridesmaid Dresses");
                 }
                 );
@@ -759,7 +766,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a282959", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a283170", async() => {
                     WriteLiteral("- - - - Wedding Accessories");
                 }
                 );
@@ -775,7 +782,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a284250", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a284461", async() => {
                     WriteLiteral("- - Bottoms");
                 }
                 );
@@ -791,7 +798,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a285525", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a285736", async() => {
                     WriteLiteral("- - - - Skirts");
                 }
                 );
@@ -807,7 +814,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a286803", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a287014", async() => {
                     WriteLiteral("- - - - Leggings");
                 }
                 );
@@ -823,7 +830,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a288083", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a288294", async() => {
                     WriteLiteral("- - - - Pants &amp; Capris");
                 }
                 );
@@ -839,7 +846,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a289373", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a289584", async() => {
                     WriteLiteral("- - - - Wide Leg Pants");
                 }
                 );
@@ -855,7 +862,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a290659", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a290870", async() => {
                     WriteLiteral("- - - - Shorts");
                 }
                 );
@@ -871,7 +878,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a291937", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a292148", async() => {
                     WriteLiteral("- - Tops &amp; Sets");
                 }
                 );
@@ -887,7 +894,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a293220", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a293431", async() => {
                     WriteLiteral("- - - - Tank Tops");
                 }
                 );
@@ -903,7 +910,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a294501", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a294712", async() => {
                     WriteLiteral("- - - - Suits &amp; Sets");
                 }
                 );
@@ -919,7 +926,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a295789", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a296000", async() => {
                     WriteLiteral("- - - - Jumpsuits");
                 }
                 );
@@ -935,7 +942,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a297070", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a297281", async() => {
                     WriteLiteral("- - - - Rompers");
                 }
                 );
@@ -951,7 +958,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a298349", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a298560", async() => {
                     WriteLiteral("- - - - Sleep &amp; Lounge");
                 }
                 );
@@ -967,7 +974,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a299639", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a299850", async() => {
                     WriteLiteral("- - Accessories");
                 }
                 );
@@ -983,7 +990,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2100918", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2101129", async() => {
                     WriteLiteral("- - - - Eyewear &amp; Accessories");
                 }
                 );
@@ -999,7 +1006,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2102216", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2102427", async() => {
                     WriteLiteral("- - - - Hats &amp; Caps");
                 }
                 );
@@ -1015,7 +1022,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2103504", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2103715", async() => {
                     WriteLiteral("- - - - Belts &amp; Cummerbunds");
                 }
                 );
@@ -1031,7 +1038,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2104800", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2105011", async() => {
                     WriteLiteral("- - - - Scarves &amp; Wraps");
                 }
                 );
@@ -1047,7 +1054,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2106092", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2106303", async() => {
                     WriteLiteral("- - - - Gloves &amp; Mittens");
                 }
                 );
@@ -1063,7 +1070,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2107385", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2107596", async() => {
                     WriteLiteral("Computer");
                 }
                 );
@@ -1079,7 +1086,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2108658", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2108869", async() => {
                     WriteLiteral("- - Bottoms");
                 }
                 );
@@ -1095,7 +1102,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2109934", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2110145", async() => {
                     WriteLiteral("- - - - Skirts");
                 }
                 );
@@ -1111,7 +1118,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2111213", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2111424", async() => {
                     WriteLiteral("- - - - Leggings");
                 }
                 );
@@ -1127,7 +1134,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2112494", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2112705", async() => {
                     WriteLiteral("- - - - Jeans");
                 }
                 );
@@ -1143,7 +1150,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2113772", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2113983", async() => {
                     WriteLiteral("- - - - Pants &amp; Capris");
                 }
                 );
@@ -1159,7 +1166,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2115063", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2115274", async() => {
                     WriteLiteral("- - - - Shorts");
                 }
                 );
@@ -1175,7 +1182,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2116342", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2116553", async() => {
                     WriteLiteral("- - Outerwear &amp; Jackets");
                 }
                 );
@@ -1191,7 +1198,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2117634", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2117845", async() => {
                     WriteLiteral("- - - - Trench");
                 }
                 );
@@ -1207,7 +1214,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2118913", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2119124", async() => {
                     WriteLiteral("- - - - Genuine Leather");
                 }
                 );
@@ -1223,7 +1230,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2120201", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2120412", async() => {
                     WriteLiteral("- - - - Parkas");
                 }
                 );
@@ -1239,7 +1246,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2121480", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2121691", async() => {
                     WriteLiteral("- - - - Down Jackets");
                 }
                 );
@@ -1255,7 +1262,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2122765", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2122976", async() => {
                     WriteLiteral("- - - - Wool &amp; Blends");
                 }
                 );
@@ -1271,7 +1278,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2124055", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2124266", async() => {
                     WriteLiteral("- - Underwear &amp; Loungewear");
                 }
                 );
@@ -1287,7 +1294,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2125350", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2125561", async() => {
                     WriteLiteral("- - - - Boxers");
                 }
                 );
@@ -1303,7 +1310,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2126629", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2126840", async() => {
                     WriteLiteral("- - - - Briefs");
                 }
                 );
@@ -1319,7 +1326,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2127908", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2128119", async() => {
                     WriteLiteral("- - - - Long Johns");
                 }
                 );
@@ -1335,7 +1342,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2129191", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2129402", async() => {
                     WriteLiteral("- - - - Men\'s Sleep &amp; Lounge");
                 }
                 );
@@ -1351,7 +1358,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2130489", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2130700", async() => {
                     WriteLiteral("- - - - Pajama Sets");
                 }
                 );
@@ -1367,7 +1374,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2131773", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2131984", async() => {
                     WriteLiteral("Smartphone");
                 }
                 );
@@ -1383,7 +1390,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2133048", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2133259", async() => {
                     WriteLiteral("- - Accessories &amp; Parts");
                 }
                 );
@@ -1399,7 +1406,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2134340", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2134551", async() => {
                     WriteLiteral("- - - - Cables &amp; Adapters");
                 }
                 );
@@ -1415,7 +1422,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2135634", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2135845", async() => {
                     WriteLiteral("- - - - Batteries");
                 }
                 );
@@ -1431,7 +1438,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2136916", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2137127", async() => {
                     WriteLiteral("- - - - Chargers");
                 }
                 );
@@ -1447,7 +1454,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2138197", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2138408", async() => {
                     WriteLiteral("- - - - Bags &amp; Cases");
                 }
                 );
@@ -1463,7 +1470,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2139486", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2139697", async() => {
                     WriteLiteral("- - - - Electronic Cigarettes");
                 }
                 );
@@ -1479,7 +1486,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2140780", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2140991", async() => {
                     WriteLiteral("- - Audio &amp; Video");
                 }
                 );
@@ -1495,7 +1502,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2142066", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2142277", async() => {
                     WriteLiteral("- - - - Televisions");
                 }
                 );
@@ -1511,7 +1518,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2143350", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2143561", async() => {
                     WriteLiteral("- - - - TV Receivers");
                 }
                 );
@@ -1527,7 +1534,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2144635", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2144846", async() => {
                     WriteLiteral("- - - - Projectors");
                 }
                 );
@@ -1543,7 +1550,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2145918", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2146129", async() => {
                     WriteLiteral("- - - - Audio Amplifier Boards");
                 }
                 );
@@ -1559,7 +1566,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2147213", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2147424", async() => {
                     WriteLiteral("- - - - TV Sticks");
                 }
                 );
@@ -1575,7 +1582,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2148495", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2148706", async() => {
                     WriteLiteral("- - Camera &amp; Photo");
                 }
                 );
@@ -1591,7 +1598,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2149782", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2149993", async() => {
                     WriteLiteral("- - - - Digital Cameras");
                 }
                 );
@@ -1607,7 +1614,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2151070", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2151281", async() => {
                     WriteLiteral("- - - - Camcorders");
                 }
                 );
@@ -1623,7 +1630,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2152353", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2152564", async() => {
                     WriteLiteral("- - - - Camera Drones");
                 }
                 );
@@ -1639,7 +1646,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2153639", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2153850", async() => {
                     WriteLiteral("- - - - Action Cameras");
                 }
                 );
@@ -1655,7 +1662,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2154926", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2155137", async() => {
                     WriteLiteral("- - - - Photo Studio Supplies");
                 }
                 );
@@ -1671,7 +1678,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2156220", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2156431", async() => {
                     WriteLiteral("- - Portable Audio &amp; Video");
                 }
                 );
@@ -1687,7 +1694,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2157515", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2157726", async() => {
                     WriteLiteral("- - - - Headphones");
                 }
                 );
@@ -1703,7 +1710,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2158798", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2159009", async() => {
                     WriteLiteral("- - - - Speakers");
                 }
                 );
@@ -1719,7 +1726,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2160079", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2160290", async() => {
                     WriteLiteral("- - - - MP3 Players");
                 }
                 );
@@ -1735,7 +1742,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2161363", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2161574", async() => {
                     WriteLiteral("- - - - VR/AR Devices");
                 }
                 );
@@ -1751,7 +1758,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2162649", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2162860", async() => {
                     WriteLiteral("- - - - Microphones");
                 }
                 );
@@ -1767,7 +1774,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2163933", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2164144", async() => {
                     WriteLiteral("- - Smart Electronics");
                 }
                 );
@@ -1783,7 +1790,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2165219", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2165430", async() => {
                     WriteLiteral("- - - - Wearable Devices");
                 }
                 );
@@ -1799,7 +1806,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2166508", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2166719", async() => {
                     WriteLiteral("- - - - Smart Home Appliances");
                 }
                 );
@@ -1815,7 +1822,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2167802", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2168013", async() => {
                     WriteLiteral("- - - - Smart Remote Controls");
                 }
                 );
@@ -1831,7 +1838,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2169096", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2169307", async() => {
                     WriteLiteral("- - - - Smart Watches");
                 }
                 );
@@ -1847,7 +1854,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2170382", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2170593", async() => {
                     WriteLiteral("- - - - Smart Wristbands");
                 }
                 );
@@ -1863,7 +1870,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2171671", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2171882", async() => {
                     WriteLiteral("- - Video Games");
                 }
                 );
@@ -1879,7 +1886,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2172953", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2173164", async() => {
                     WriteLiteral("- - - - Handheld Game Players");
                 }
                 );
@@ -1895,7 +1902,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2174249", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2174460", async() => {
                     WriteLiteral("- - - - Game Controllers");
                 }
                 );
@@ -1911,7 +1918,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2175540", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2175751", async() => {
                     WriteLiteral("- - - - Joysticks");
                 }
                 );
@@ -1927,7 +1934,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2176824", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2177035", async() => {
                     WriteLiteral("- - - - Stickers");
                 }
                 );
@@ -1943,7 +1950,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2178107", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2178318", async() => {
                     WriteLiteral("Game Consoles");
                 }
                 );
@@ -1959,7 +1966,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2179387", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2179598", async() => {
                     WriteLiteral("Mp3 &amp; headphone");
                 }
                 );
@@ -1975,7 +1982,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2180673", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2180884", async() => {
                     WriteLiteral("Tv &amp; Video");
                 }
                 );
@@ -1991,7 +1998,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2181954", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2182165", async() => {
                     WriteLiteral("Watches");
                 }
                 );
@@ -2007,7 +2014,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2183228", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2183439", async() => {
                     WriteLiteral("Washing Machine");
                 }
                 );
@@ -2023,7 +2030,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2184510", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2184721", async() => {
                     WriteLiteral("Camera");
                 }
                 );
@@ -2039,7 +2046,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2185783", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2185994", async() => {
                     WriteLiteral("Audio &amp; Theater");
                 }
                 );
@@ -2055,7 +2062,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2187069", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2187280", async() => {
                     WriteLiteral("Accessories");
                 }
                 );
@@ -2071,7 +2078,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2188347", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2188558", async() => {
                     WriteLiteral("Games &amp; Consoles");
                 }
                 );
@@ -2123,7 +2130,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                             <div class=""single-cart-item d-flex"">
                                                 <div class=""cart-item-thumb"">
                                                     <a href=""single-product.html"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2191970", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2192181", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2152,7 +2159,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                             <div class=""single-cart-item d-flex"">
               ");
             WriteLiteral("                                  <div class=\"cart-item-thumb\">\r\n                                                    <a href=\"single-product.html\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2194315", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2194526", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2245,7 +2252,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                                 <li><a href=""shop-left-sidebar.html"">Blazers</a></li>
                                                 <li><a href=""shop-left-sidebar.");
             WriteLiteral("html\">Trench Coats </a></li>\r\n                                            </ul>\r\n                                        </li>\r\n                                        <li>\r\n                                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2201039", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2201250", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2329,7 +2336,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                         <li><a href=""index-4.html"">Home 04</a></li>
          ");
             WriteLiteral("                           </ul>\r\n                                </li>\r\n                                <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2207662", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2207873", async() => {
                 WriteLiteral("About");
             }
             );
@@ -2407,7 +2414,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                         </li>
                                         <li class=""custom-banner"">
                                             <a href=""shop-4-column.html"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2213923", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2214134", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2452,7 +2459,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                                 </div>
     ");
             WriteLiteral("                                        </div>\r\n                                            <div class=\"custom-banner\">\r\n                                                <a href=\"shop-4-column.html\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2217470", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2217681", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2521,7 +2528,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                     <div class=""col-sm-4 col-5"">
                         <div class");
             WriteLiteral("=\"mobile-logo text-center\">\r\n                            <a href=\"index.html\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2222015", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2222226", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2565,7 +2572,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                                 <div class=""single-cart-item d-flex"">
                                                     <div class=""cart-item-thumb"">
                                                         <a href=""single-product.html"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2224981", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2225192", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2593,7 +2600,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                             <li>
                                                 <div ");
             WriteLiteral("class=\"single-cart-item d-flex\">\r\n                                                    <div class=\"cart-item-thumb\">\r\n                                                        <a href=\"single-product.html\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2227384", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2227595", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2654,9 +2661,9 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
 
             <div class=""header-search"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2231654", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2231865", async() => {
                 WriteLiteral("\r\n                    <div class=\"search-category\">\r\n                        <select>\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2232033", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2232244", async() => {
                     WriteLiteral("All categories");
                 }
                 );
@@ -2672,7 +2679,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2233296", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2233507", async() => {
                     WriteLiteral("Laptop");
                 }
                 );
@@ -2688,7 +2695,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2234551", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2234762", async() => {
                     WriteLiteral("- - Hot Categories");
                 }
                 );
@@ -2704,7 +2711,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2235818", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2236029", async() => {
                     WriteLiteral("- - - - Dresses");
                 }
                 );
@@ -2720,7 +2727,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2237082", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2237293", async() => {
                     WriteLiteral("- - - - Jackets &amp; Coats");
                 }
                 );
@@ -2736,7 +2743,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2238358", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2238569", async() => {
                     WriteLiteral("- - - - Sweaters");
                 }
                 );
@@ -2752,7 +2759,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2239623", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2239834", async() => {
                     WriteLiteral("- - - - Jeans");
                 }
                 );
@@ -2768,7 +2775,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2240885", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2241096", async() => {
                     WriteLiteral("- - - - Blouses &amp; Shirts");
                 }
                 );
@@ -2784,7 +2791,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2242162", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2242373", async() => {
                     WriteLiteral("- - Outerwear &amp; Jackets");
                 }
                 );
@@ -2800,7 +2807,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2243438", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2243649", async() => {
                     WriteLiteral("- - - - Basic Jackets");
                 }
                 );
@@ -2816,7 +2823,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2244708", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2244919", async() => {
                     WriteLiteral("- - - - Real Fur");
                 }
                 );
@@ -2832,7 +2839,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2245973", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2246184", async() => {
                     WriteLiteral("- - - - Down Coats");
                 }
                 );
@@ -2848,7 +2855,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2247240", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2247451", async() => {
                     WriteLiteral("- - - - Blazers");
                 }
                 );
@@ -2864,7 +2871,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2248504", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2248715", async() => {
                     WriteLiteral("- - - - Trench Coats");
                 }
                 );
@@ -2880,7 +2887,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2249773", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2249984", async() => {
                     WriteLiteral("- - Weddings &amp; Events");
                 }
                 );
@@ -2896,7 +2903,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2251047", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2251258", async() => {
                     WriteLiteral("- - - - Wedding Dresses");
                 }
                 );
@@ -2912,7 +2919,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2252319", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2252530", async() => {
                     WriteLiteral("- - - - Evening Dresses");
                 }
                 );
@@ -2928,7 +2935,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2253591", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2253802", async() => {
                     WriteLiteral("- - - - Prom Dresses");
                 }
                 );
@@ -2944,7 +2951,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2254860", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2255071", async() => {
                     WriteLiteral("- - - - Bridesmaid Dresses");
                 }
                 );
@@ -2960,7 +2967,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2256135", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2256346", async() => {
                     WriteLiteral("- - - - Wedding Accessories");
                 }
                 );
@@ -2976,7 +2983,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2257411", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2257622", async() => {
                     WriteLiteral("- - Bottoms");
                 }
                 );
@@ -2992,7 +2999,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2258671", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2258882", async() => {
                     WriteLiteral("- - - - Skirts");
                 }
                 );
@@ -3008,7 +3015,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2259934", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2260145", async() => {
                     WriteLiteral("- - - - Leggings");
                 }
                 );
@@ -3024,7 +3031,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2261199", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2261410", async() => {
                     WriteLiteral("- - - - Pants &amp; Capris");
                 }
                 );
@@ -3040,7 +3047,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2262474", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2262685", async() => {
                     WriteLiteral("- - - - Wide Leg Pants");
                 }
                 );
@@ -3056,7 +3063,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2263745", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2263956", async() => {
                     WriteLiteral("- - - - Shorts");
                 }
                 );
@@ -3072,7 +3079,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2265008", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2265219", async() => {
                     WriteLiteral("- - Tops &amp; Sets");
                 }
                 );
@@ -3088,7 +3095,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2266276", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2266487", async() => {
                     WriteLiteral("- - - - Tank Tops");
                 }
                 );
@@ -3104,7 +3111,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2267542", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2267753", async() => {
                     WriteLiteral("- - - - Suits &amp; Sets");
                 }
                 );
@@ -3120,7 +3127,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2268815", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2269026", async() => {
                     WriteLiteral("- - - - Jumpsuits");
                 }
                 );
@@ -3136,7 +3143,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2270081", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2270292", async() => {
                     WriteLiteral("- - - - Rompers");
                 }
                 );
@@ -3152,7 +3159,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2271345", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2271556", async() => {
                     WriteLiteral("- - - - Sleep &amp; Lounge");
                 }
                 );
@@ -3168,7 +3175,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2272620", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2272831", async() => {
                     WriteLiteral("- - Accessories");
                 }
                 );
@@ -3184,7 +3191,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2273884", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2274095", async() => {
                     WriteLiteral("- - - - Eyewear &amp; Accessories");
                 }
                 );
@@ -3200,7 +3207,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2275166", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2275377", async() => {
                     WriteLiteral("- - - - Hats &amp; Caps");
                 }
                 );
@@ -3216,7 +3223,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2276438", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2276649", async() => {
                     WriteLiteral("- - - - Belts &amp; Cummerbunds");
                 }
                 );
@@ -3232,7 +3239,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2277718", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2277929", async() => {
                     WriteLiteral("- - - - Scarves &amp; Wraps");
                 }
                 );
@@ -3248,7 +3255,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2278994", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2279205", async() => {
                     WriteLiteral("- - - - Gloves &amp; Mittens");
                 }
                 );
@@ -3264,7 +3271,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2280271", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2280482", async() => {
                     WriteLiteral("Computer");
                 }
                 );
@@ -3280,7 +3287,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2281528", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2281739", async() => {
                     WriteLiteral("- - Bottoms");
                 }
                 );
@@ -3296,7 +3303,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2282788", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2282999", async() => {
                     WriteLiteral("- - - - Skirts");
                 }
                 );
@@ -3312,7 +3319,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2284051", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2284262", async() => {
                     WriteLiteral("- - - - Leggings");
                 }
                 );
@@ -3328,7 +3335,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2285316", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2285527", async() => {
                     WriteLiteral("- - - - Jeans");
                 }
                 );
@@ -3344,7 +3351,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2286578", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2286789", async() => {
                     WriteLiteral("- - - - Pants &amp; Capris");
                 }
                 );
@@ -3360,7 +3367,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2287853", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2288064", async() => {
                     WriteLiteral("- - - - Shorts");
                 }
                 );
@@ -3376,7 +3383,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2289116", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2289327", async() => {
                     WriteLiteral("- - Outerwear &amp; Jackets");
                 }
                 );
@@ -3392,7 +3399,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2290392", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2290603", async() => {
                     WriteLiteral("- - - - Trench");
                 }
                 );
@@ -3408,7 +3415,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2291655", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2291866", async() => {
                     WriteLiteral("- - - - Genuine Leather");
                 }
                 );
@@ -3424,7 +3431,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2292927", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2293138", async() => {
                     WriteLiteral("- - - - Parkas");
                 }
                 );
@@ -3440,7 +3447,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2294190", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2294401", async() => {
                     WriteLiteral("- - - - Down Jackets");
                 }
                 );
@@ -3456,7 +3463,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2295459", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2295670", async() => {
                     WriteLiteral("- - - - Wool &amp; Blends");
                 }
                 );
@@ -3472,7 +3479,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2296733", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2296944", async() => {
                     WriteLiteral("- - Underwear &amp; Loungewear");
                 }
                 );
@@ -3488,7 +3495,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2298012", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2298223", async() => {
                     WriteLiteral("- - - - Boxers");
                 }
                 );
@@ -3504,7 +3511,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2299275", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2299486", async() => {
                     WriteLiteral("- - - - Briefs");
                 }
                 );
@@ -3520,7 +3527,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2300538", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2300749", async() => {
                     WriteLiteral("- - - - Long Johns");
                 }
                 );
@@ -3536,7 +3543,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2301805", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2302016", async() => {
                     WriteLiteral("- - - - Men\'s Sleep &amp; Lounge");
                 }
                 );
@@ -3552,7 +3559,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2303087", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2303298", async() => {
                     WriteLiteral("- - - - Pajama Sets");
                 }
                 );
@@ -3568,7 +3575,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2304355", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2304566", async() => {
                     WriteLiteral("Smartphone");
                 }
                 );
@@ -3584,7 +3591,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2305614", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2305825", async() => {
                     WriteLiteral("- - Accessories &amp; Parts");
                 }
                 );
@@ -3600,7 +3607,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2306890", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2307101", async() => {
                     WriteLiteral("- - - - Cables &amp; Adapters");
                 }
                 );
@@ -3616,7 +3623,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2308168", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2308379", async() => {
                     WriteLiteral("- - - - Batteries");
                 }
                 );
@@ -3632,7 +3639,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2309434", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2309645", async() => {
                     WriteLiteral("- - - - Chargers");
                 }
                 );
@@ -3648,7 +3655,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2310699", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2310910", async() => {
                     WriteLiteral("- - - - Bags &amp; Cases");
                 }
                 );
@@ -3664,7 +3671,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2311972", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2312183", async() => {
                     WriteLiteral("- - - - Electronic Cigarettes");
                 }
                 );
@@ -3680,7 +3687,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2313250", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2313461", async() => {
                     WriteLiteral("- - Audio &amp; Video");
                 }
                 );
@@ -3696,7 +3703,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2314520", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2314731", async() => {
                     WriteLiteral("- - - - Televisions");
                 }
                 );
@@ -3712,7 +3719,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2315788", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2315999", async() => {
                     WriteLiteral("- - - - TV Receivers");
                 }
                 );
@@ -3728,7 +3735,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2317057", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2317268", async() => {
                     WriteLiteral("- - - - Projectors");
                 }
                 );
@@ -3744,7 +3751,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2318324", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2318535", async() => {
                     WriteLiteral("- - - - Audio Amplifier Boards");
                 }
                 );
@@ -3760,7 +3767,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2319603", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2319814", async() => {
                     WriteLiteral("- - - - TV Sticks");
                 }
                 );
@@ -3776,7 +3783,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2320869", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2321080", async() => {
                     WriteLiteral("- - Camera &amp; Photo");
                 }
                 );
@@ -3792,7 +3799,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2322140", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2322351", async() => {
                     WriteLiteral("- - - - Digital Cameras");
                 }
                 );
@@ -3808,7 +3815,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2323412", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2323623", async() => {
                     WriteLiteral("- - - - Camcorders");
                 }
                 );
@@ -3824,7 +3831,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2324679", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2324890", async() => {
                     WriteLiteral("- - - - Camera Drones");
                 }
                 );
@@ -3840,7 +3847,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2325949", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2326160", async() => {
                     WriteLiteral("- - - - Action Cameras");
                 }
                 );
@@ -3856,7 +3863,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2327220", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2327431", async() => {
                     WriteLiteral("- - - - Photo Studio Supplies");
                 }
                 );
@@ -3872,7 +3879,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2328498", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2328709", async() => {
                     WriteLiteral("- - Portable Audio &amp; Video");
                 }
                 );
@@ -3888,7 +3895,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2329777", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2329988", async() => {
                     WriteLiteral("- - - - Headphones");
                 }
                 );
@@ -3904,7 +3911,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2331044", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2331255", async() => {
                     WriteLiteral("- - - - Speakers");
                 }
                 );
@@ -3920,7 +3927,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2332309", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2332520", async() => {
                     WriteLiteral("- - - - MP3 Players");
                 }
                 );
@@ -3936,7 +3943,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2333577", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2333788", async() => {
                     WriteLiteral("- - - - VR/AR Devices");
                 }
                 );
@@ -3952,7 +3959,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2334847", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2335058", async() => {
                     WriteLiteral("- - - - Microphones");
                 }
                 );
@@ -3968,7 +3975,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2336115", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2336326", async() => {
                     WriteLiteral("- - Smart Electronics");
                 }
                 );
@@ -3984,7 +3991,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2337385", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2337596", async() => {
                     WriteLiteral("- - - - Wearable Devices");
                 }
                 );
@@ -4000,7 +4007,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2338658", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2338869", async() => {
                     WriteLiteral("- - - - Smart Home Appliances");
                 }
                 );
@@ -4016,7 +4023,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2339936", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2340147", async() => {
                     WriteLiteral("- - - - Smart Remote Controls");
                 }
                 );
@@ -4032,7 +4039,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2341214", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2341425", async() => {
                     WriteLiteral("- - - - Smart Watches");
                 }
                 );
@@ -4048,7 +4055,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2342484", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2342695", async() => {
                     WriteLiteral("- - - - Smart Wristbands");
                 }
                 );
@@ -4064,7 +4071,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2343757", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2343968", async() => {
                     WriteLiteral("- - Video Games");
                 }
                 );
@@ -4080,7 +4087,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2345023", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2345234", async() => {
                     WriteLiteral("- - - - Handheld Game Players");
                 }
                 );
@@ -4096,7 +4103,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2346303", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2346514", async() => {
                     WriteLiteral("- - - - Game Controllers");
                 }
                 );
@@ -4112,7 +4119,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2347578", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2347789", async() => {
                     WriteLiteral("- - - - Joysticks");
                 }
                 );
@@ -4128,7 +4135,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2348846", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2349057", async() => {
                     WriteLiteral("- - - - Stickers");
                 }
                 );
@@ -4144,7 +4151,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2350113", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2350324", async() => {
                     WriteLiteral("Game Consoles");
                 }
                 );
@@ -4160,7 +4167,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2351377", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2351588", async() => {
                     WriteLiteral("Mp3 &amp; headphone");
                 }
                 );
@@ -4176,7 +4183,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2352647", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2352858", async() => {
                     WriteLiteral("Tv &amp; Video");
                 }
                 );
@@ -4192,7 +4199,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2353912", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2354123", async() => {
                     WriteLiteral("Watches");
                 }
                 );
@@ -4208,7 +4215,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2355170", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2355381", async() => {
                     WriteLiteral("Washing Machine");
                 }
                 );
@@ -4224,7 +4231,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2356436", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2356647", async() => {
                     WriteLiteral("Camera");
                 }
                 );
@@ -4240,7 +4247,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2357693", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2357904", async() => {
                     WriteLiteral("Audio &amp; Theater");
                 }
                 );
@@ -4256,7 +4263,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2358963", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2359174", async() => {
                     WriteLiteral("Accessories");
                 }
                 );
@@ -4272,7 +4279,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2360225", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef3151dad357799dd467a661ff595ea11e7e61a2360436", async() => {
                     WriteLiteral("Games &amp; Consoles");
                 }
                 );
@@ -4326,7 +4333,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                     <li>
                         ");
             WriteLiteral("<div class=\"dropdown dropdown-mobile menu-item-has-children\">\r\n                            <button class=\"dm-toggle\" type=\"button\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2364000", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2364211", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4341,7 +4348,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" English <i class=\"icon ion-chevron-down\"></i></button>\r\n\r\n                            <ul class=\"dropdown-menu\">\r\n                                <li><a href=\"#\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2365287", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2365498", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4356,7 +4363,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" English</a></li>\r\n                                <li><a href=\"#\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2366470", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2366681", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4454,7 +4461,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                             <li class=""custom-banner"">
                  ");
             WriteLiteral("               <a href=\"shop-4-column.html\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2373037", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2373248", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4500,7 +4507,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                                 </div>
                                 <div class=""custom-banner"">
                                     <a href=""shop-4-column.html"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2376208", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2376419", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -4578,7 +4585,7 @@ AddHtmlAttributeValue("", 4474, Model.LogoUrl, 4474, 14, false);
                             </li>
                             <li>
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2381432", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ef3151dad357799dd467a661ff595ea11e7e61a2381643", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

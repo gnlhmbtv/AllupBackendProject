@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace AllupBackendProject.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
@@ -44,7 +45,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         {
             if (!string.IsNullOrEmpty(role))
             {
-                if (!await _roleManager.RoleExistsAsync(role))
+                if (!await _roleManager.RoleExistsAsync(role)) 
                 {
                     await _roleManager.CreateAsync(new IdentityRole(role));
                     // await _roleManager.DeleteAsync(new IdentityRole(role));
@@ -72,7 +73,6 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Update(string id, List<string> roles)
         {
-
             var user = await _userManager.FindByIdAsync(id);
             var dbRoles = _roleManager.Roles.ToList();
             var userRoles = await _userManager.GetRolesAsync(user);
@@ -82,7 +82,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
             await _userManager.AddToRolesAsync(user, addedRole);
             await _userManager.RemoveFromRolesAsync(user, removedRole);
 
-            return RedirectToAction("index");
+            return RedirectToAction("Index");
         }
 
 

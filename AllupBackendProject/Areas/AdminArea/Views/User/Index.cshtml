@@ -1,0 +1,56 @@
+﻿@model IEnumerable<AppUser>
+@{ ViewData["Title"] = "Index"; }
+
+
+<div class="col-lg-6 grid-margin stretch-card">
+    <form>
+        <input type="text" placeholder="search" name="name" style="width: 100px"/>
+        <input type="submit" value="search" />
+    </form>
+    <div class="card " >
+        <div class="card-body">
+            <h4 class="card-title">User Table</h4>
+            <p class="card-description">
+                <a class="btn btn-primary" asp-controller="User" asp-action="Create"> User Create</a>
+            </p>
+            <div class="table-responsive " >
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>FullName</th>
+                            <th>Email</th>
+                            <th>UserName</th>
+                            <th>Active</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.FullName</td>
+                            <td>@item.Email</td>
+                            <td>@item.UserName</td>
+                            @if (User.Identity.Name == item.UserName)
+                            {
+                                <td>el saxla</td>
+                            }
+                            else
+                            {
+                                <td>
+
+                            <a asp-controller="User" asp-action="Update" asp-route-id="" class="btn btn-success"><i class="mdi mdi-table-edit"></i></a>
+                            <a asp-controller="User" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info"><i class="mdi mdi-account-card-details"></i></a>
+                            <a asp-controller="User" asp-action="Delete" asp-route-id="" class="btn btn-danger"><i class="mdi mdi-account-remove"></i></a>
+                            <a asp-controller="Role" asp-action="update" asp-route-id="@item.Id" class="btn btn-warning">CRole</a>
+                                </td>
+                            }
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

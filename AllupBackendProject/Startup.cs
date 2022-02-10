@@ -52,8 +52,9 @@ namespace AllupBackendProject
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
             app.UseStaticFiles();
+            app.UseRouting();
+            //app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
 
