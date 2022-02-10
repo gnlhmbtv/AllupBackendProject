@@ -1,6 +1,7 @@
 ﻿@model HomeVm
 @{
     ViewData["Title"] = "Index";
+    int count = 1;
 }
 
 <!--====== Slider Part Start ======-->
@@ -74,19 +75,25 @@
                 </div>
             </div>
         </div> <!-- row -->
-        <div class="row category-active">
-            @foreach (var item in Model.Categories)
-            {
-                <div class="col-lg-2">
+        <div class="row-wrapper category-active">
+            <div class="custom-col">
+                @foreach (var category in Model.Categories)
+                {
                     <div class="single-category text-center">
                         <a target="_blank" href="shop-left-sidebar.html">
-                            <img src="~/images/@item.ImageUrl" alt="category">
-                            <p>@item.Name</p>
+                            <img src="~/images/@category.ImageUrl" style="width:133px;height:133px" alt="category">
+                            <p>@category.Name</p>
                         </a>
-                    </div> <!-- single category -->
-                </div>
-            }
-        </div> <!-- row -->
+                    </div>
+                    if (count % 2 == 0 && count != Model.Categories.Count)
+                    {
+                        @Html.Raw("</div>");
+                        @Html.Raw("<div class='custom-col'>");
+                    }
+                    count++;
+                }
+            </div>
+        </div>
     </div> <!-- container -->
 </section>
 
@@ -2215,7 +2222,13 @@
             <div class="col-lg-4">
                 <div class="single-blog">
                     <div class="blag-image">
-                        <a href="blog-single-left-sidebar.html"><img src="~/images/@item.ImageUrl" alt="Blog"></a>
+                        <a asp-controller="Blog" asp-action="Index" id="blogImage"><img src="~/images/@item.ImageUrl" alt="Blog"></a>
+                        @Html.ActionLink(@item.Title,
+                        "Index",  
+                         "Blog" ,
+                new { @item.Id }, 
+                null  
+                )
                         <p class="meta-date">
                             <span class="day">@item.CreatedAt.Day</span>
                             <span class="month">@TempData["MonthName"]</span>
@@ -2282,3 +2295,19 @@
 @await Component.InvokeAsync("Mails");
 
 <!--====== Newsletter Part Ends ======-->
+@section PassBlogId{
+    <script>
+        $('#blogImage').click(function () {
+        var blogid = $('#blogImage').val();
+        $.ajax({
+            type: 'GET',
+            data: { id: blogid },
+            dataType: "json",
+            url: '@Url.Action("Index","Blog")',
+            success: function (result) {
+               //do something with the result
+            }
+        });
+}
+    </script>
+            }
