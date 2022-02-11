@@ -361,24 +361,67 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         }
 
         // GET: ProductController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null) return NotFound();
+            Product product = await _context.Products.Include(p => p.Campaign).Include(p => p.Brand).FirstOrDefaultAsync(p => p.Id == id);
+            var relation = _context.ProductRelations.Where(b => b.ProductId == id && b.BrandId == product.BrandId).FirstOrDefault();
+            Category category = await _context.Categories.FindAsync(relation.CategoryId);
+            ViewBag.category = category;
+
+            ViewBag.color = await _context.ColorProducts.Where(p => p.ProductId == id).Select(c => c.Color).ToListAsync();
+            ViewBag.photo = _context.ProductPhotos.Where(p => p.ProductId == product.Id && p.IsMain == true).FirstOrDefault();
+            return View(product);
         }
 
         // POST: ProductController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> Delete(int? id, Product product)
         {
-            try
+            var newProduct = await _context.Products.FindAsync(id);
+            if (newProduct == null) return NotFound();
+
+            var productColor = _context.ColorProducts.Where(p => p.ProductId == id).ToList();
+            if (productColor != null)
             {
-                return RedirectToAction(nameof(Index));
+                foreach (var item in productColor)
+                {
+                    _context.ColorProducts.Remove(item);
+                    await _context.SaveChangesAsync();
+                }
             }
-            catch
+            var productTags = _context.ProductTags.Where(p => p.ProductId == id).ToList();
+            if (productTags != null)
             {
-                return View();
+                foreach (var item in productTags)
+                {
+                    _context.ProductTags.Remove(item);
+                    await _context.SaveChangesAsync();
+                }
             }
+            var relationProduct = _context.ProductRelations.FirstOrDefault(p => p.ProductId == id && p.BrandId == newProduct.BrandId);
+            _context.ProductRelations.Remove(relationProduct);
+
+
+            if (newProduct.Photos != null)
+            {
+                var oldPhoto = _context.ProductPhotos.Where(p => p.ProductId == newProduct.Id).ToList();
+                foreach (var item in oldPhoto)
+                {
+                    string path = Path.Combine(_env.WebRootPath, "images/product/", item.PhotoUrl);
+                    if (System.IO.File.Exists(path))
+                    {
+                        System.IO.File.Delete(path);
+                    }
+                    _context.ProductPhotos.Remove(item);
+                    await _context.SaveChangesAsync();
+                }
+            }
+            _context.Products.Remove(newProduct);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
         }
     }
 }
