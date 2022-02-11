@@ -23,7 +23,6 @@ namespace AllupBackendProject.DAL
         public DbSet<BrandBanner> Brands { get; set; }
         public DbSet<Mail> Mails { get; set; }
         public DbSet<Feature> Features { get; set; }
-        public DbSet<Blog> Blogs { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<About> About { get; set; }
@@ -37,5 +36,7 @@ namespace AllupBackendProject.DAL
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<ProductRelation> ProductRelations { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogPhoto> BlogPhotos { get; set; }
     }
 }

@@ -2214,36 +2214,7 @@
 <!--====== Features Banner Part Ends ======-->
 <!--====== Blog Part Start ======-->
 
-<section class="blog-area blog-bg pt-100 pb-100">
-    <div class="container">
-        <div class="row blog-active">
-            @foreach (var item in Model.Blogs)
-	{
-            <div class="col-lg-4">
-                <div class="single-blog">
-                    <div class="blag-image">
-                        <a asp-controller="Blog" asp-action="Index" id="blogImage"><img src="~/images/@item.ImageUrl" alt="Blog"></a>
-                        @Html.ActionLink(@item.Title,
-                        "Index",  
-                         "Blog" ,
-                new { @item.Id }, 
-                null  
-                )
-                        <p class="meta-date">
-                            <span class="day">@item.CreatedAt.Day</span>
-                            <span class="month">@TempData["MonthName"]</span>
-                        </p>
-                    </div>
-                    <div class="blag-content">
-                        <h2 class="blog-title"><a href="blog-single-left-sidebar.html">@item.Title</a></h2>
-                        <p>@item.HomePageText</p>
-                    </div>
-                </div> <!-- single blog -->
-            </div>
-	}
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
+
 
 <!--====== Blog Part Ends ======-->
 <!--====== Testimonial Part Start ======-->

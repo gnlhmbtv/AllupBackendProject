@@ -69,7 +69,7 @@ namespace AllupBackendProject.Controllers
                 }
                 return View();
             }
-            await _userManager.AddToRoleAsync(user, "Member");
+            await _userManager.AddToRoleAsync(user, "Admin");
 
             await _signInManager.SignInAsync(user, true);
 

@@ -1,146 +1,159 @@
 ﻿using AllupBackendProject.DAL;
 using AllupBackendProject.Models;
 using FrontToBack.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace AllupBackendProject.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
     public class BlogController : Controller
     {
-        private readonly Context _context;
         private readonly IWebHostEnvironment _env;
-        public BlogController(Context context, IWebHostEnvironment env)
+        private readonly Context _context;
+        private readonly UserManager<AppUser> _userManager;
+
+        public BlogController(Context context, UserManager<AppUser> userManager, IWebHostEnvironment env)
         {
             _context = context;
+            _userManager = userManager;
             _env = env;
         }
-        public IActionResult Index()
+        // GET: BlogController
+        public ActionResult Index()
         {
-            List<Blog> blogs = _context.Blogs.ToList();
-            return View(blogs);
+            List<Blog> blog = _context.Blogs.ToList();
+            return View(blog);
         }
 
-        public IActionResult Create()
+        // GET: BlogController/Details/5
+        public ActionResult Details(int id)
         {
             return View();
         }
-        [HttpPost]
-        [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Create(Blog blog)
-        {
-            if (ModelState["Photo"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
-            {
-                ModelState.AddModelError("Photos", "Do not empty");
-            }
-            if (!blog.Photo.IsImage())
-            {
-                ModelState.AddModelError("Photo", "Please upload only image files");
-                return View();
-            }
-            if (blog.Photo.IsCorrectSize(300))
-            {
-                ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
-                return View();
-            }
-            Blog newBlog = new Blog();
 
-            string fileName = await blog.Photo.SaveImageAsync(_env.WebRootPath, "images");
-            newBlog.ImageUrl = fileName;
-            newBlog.Title = blog.Title;
-            newBlog.BlogText = blog.BlogText;
-            newBlog.HomePageText = blog.HomePageText;
-            newBlog.CreatedAt = DateTime.Now;
+        // GET: BlogController/Create
+        public ActionResult Create()
+        {
+            var products = new SelectList(_context.Products.OrderBy(l => l.Price)
+            .ToDictionary(us => us.Id, us => us.Name), "Key", "Value");
+
+
+            ViewBag.ProductId = products;
+
+            return View();
+        }
+
+        // POST: BlogController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Create(Blog blog, string videourl)
+        {
+            if (blog.Photos == null && videourl == null) return NotFound();
+            Blog newBlog = new Blog()
+            {
+                Title = blog.Title,
+                Description = blog.Description,
+                ProductId = blog.ProductId,
+                BlogDate = blog.BlogDate,
+                UserId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value,
+            };
             await _context.Blogs.AddAsync(newBlog);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index");
-        }
 
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
-            Blog dbBlog = await _context.Blogs.FindAsync(id);
-            if (dbBlog == null) return NotFound();
-            return View(dbBlog);
-        }
-
-        [HttpPost]
-        [AutoValidateAntiforgeryToken]
-        [ActionName("Delete")]
-        public async Task<IActionResult> DeleteBlog(int? id)
-        {
-            if (id == null) return NotFound();
-            Blog dbBlog = await _context.Blogs.FindAsync(id);
-            if (dbBlog == null) return NotFound();
-
-            string path = Path.Combine(_env.WebRootPath, "image", dbBlog.ImageUrl);
-            if (System.IO.File.Exists(path))
+            if (videourl != null)
             {
-                System.IO.File.Delete(path);
+                BlogPhoto blogPhoto = new BlogPhoto();
+                blogPhoto.VideoUrl = videourl;
+                blogPhoto.BlogId = newBlog.Id;
+                await _context.BlogPhotos.AddAsync(blogPhoto);
+                await _context.SaveChangesAsync();
             }
-            _context.Blogs.Remove(dbBlog);
-            await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Update(int? id)
-        {
-            if (id == null) return NotFound();
-            Blog dbBlog = await _context.Blogs.FindAsync(id);
-            if (dbBlog == null) return NotFound();
-            return View(dbBlog);
-        }
-        [HttpPost]
-        [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Update(int? id, Blog blog)
-        {
-            Blog dbBlog = await _context.Blogs.FindAsync(id);
-
-            if (blog.Photo != null)
+            if (blog.Photos != null)
             {
-                if (ModelState["Photo"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
+                if (ModelState["Photos"].ValidationState == Microsoft.AspNetCore.Mvc.ModelBinding.ModelValidationState.Invalid)
                 {
                     ModelState.AddModelError("Photo", "Do not empty");
                 }
-                if (!blog.Photo.IsImage())
+
+                foreach (IFormFile photo in blog.Photos)
                 {
-                    ModelState.AddModelError("Photo", "Please upload only image files");
-                    return View();
+                    if (!photo.IsImage())
+                    {
+                        ModelState.AddModelError("Photo", "only image");
+                        return RedirectToAction("Index");
+                    }
+                    if (photo.IsCorrectSize(300))
+                    {
+                        ModelState.AddModelError("Photo", "please enter photo under 300kb");
+                        return RedirectToAction("Index");
+                    }
+                    BlogPhoto blogPhoto = new BlogPhoto();
+
+                    string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images");
+
+                    blogPhoto.PhotoUrl = fileName;
+                    blogPhoto.BlogId = newBlog.Id;
+                    await _context.BlogPhotos.AddAsync(blogPhoto);
+                    await _context.SaveChangesAsync();
                 }
-                if (blog.Photo.IsCorrectSize(300))
-                {
-                    ModelState.AddModelError("Photo", "The photo size cannot be more than 300");
-                    return View();
-                }
-                string path = Path.Combine(_env.WebRootPath, "images", dbBlog.ImageUrl);
-                if (System.IO.File.Exists(path))
-                {
-                    System.IO.File.Delete(path);
-                }
-                string filename = await blog.Photo.SaveImageAsync(_env.WebRootPath, "images");
-                dbBlog.ImageUrl = filename;
 
             }
-            dbBlog.Title = blog.Title;
-            dbBlog.BlogText = blog.BlogText;
-            dbBlog.HomePageText = blog.HomePageText;
-            await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-        public async Task<IActionResult> Detail(int? id)
+
+        // GET: BlogController/Edit/5
+        public ActionResult Edit(int id)
         {
-            if (id == null) return NotFound();
-            Blog dbBlog = await _context.Blogs.FindAsync(id);
-            if (dbBlog == null) return NotFound();
-            return View(dbBlog);
+            return View();
+        }
+
+        // POST: BlogController/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: BlogController/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: BlogController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }
