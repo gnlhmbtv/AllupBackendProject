@@ -186,3 +186,4 @@ C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\net
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\AllupBackendProject.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Create.cshtml.g.cs
 C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Index.cshtml.g.cs
+C:\Users\user\source\repos\AllupBackendProject\AllupBackendProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Product\Delete.cshtml.g.cs
