@@ -77,7 +77,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                 BlogPhoto blogPhoto = new BlogPhoto();
                 blogPhoto.VideoUrl = videourl;
                 blogPhoto.BlogId = newBlog.Id;
-                await _context.BlogPhotos.AddAsync(blogPhoto);
+                await _context.BlogPhoto.AddAsync(blogPhoto);
                 await _context.SaveChangesAsync();
             }
 
@@ -106,7 +106,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
 
                     blogPhoto.PhotoUrl = fileName;
                     blogPhoto.BlogId = newBlog.Id;
-                    await _context.BlogPhotos.AddAsync(blogPhoto);
+                    await _context.BlogPhoto.AddAsync(blogPhoto);
                     await _context.SaveChangesAsync();
                 }
 

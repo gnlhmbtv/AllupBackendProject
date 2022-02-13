@@ -146,7 +146,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                 }
                 ProductPhoto productPhoto = new ProductPhoto();
 
-                string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images/product/");
+                string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images");
                 if (count == 0) productPhoto.IsMain = true;
                 productPhoto.PhotoUrl = fileName;
                 productPhoto.ProductId = newproduct.Id;
@@ -293,7 +293,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                 {
                     foreach (var item in oldPhoto)
                     {
-                        string path = Path.Combine(_env.WebRootPath, "images/product/", item.PhotoUrl);
+                        string path = Path.Combine(_env.WebRootPath, "images", item.PhotoUrl);
                         if (System.IO.File.Exists(path))
                         {
                             System.IO.File.Delete(path);
@@ -319,7 +319,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
 
                         ProductPhoto productPhoto = new ProductPhoto();
 
-                        string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images/product/");
+                        string fileName = await photo.SaveImageAsync(_env.WebRootPath, "images");
                         if (count == 0) productPhoto.IsMain = true;
                         productPhoto.PhotoUrl = fileName;
                         productPhoto.ProductId = newProduct.Id;
@@ -344,8 +344,8 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                             ModelState.AddModelError("Photo", "please enter photo under 300kb");
                             return RedirectToAction("Index");
                         }
-                        string fileName = await product.Photos[i].SaveImageAsync(_env.WebRootPath, "images/product/");
-                        string path = Path.Combine(_env.WebRootPath, "images/product/", oldPhoto[i].PhotoUrl);
+                        string fileName = await product.Photos[i].SaveImageAsync(_env.WebRootPath, "images");
+                        string path = Path.Combine(_env.WebRootPath, "images", oldPhoto[i].PhotoUrl);
                         if (System.IO.File.Exists(path))
                         {
                             System.IO.File.Delete(path);
@@ -411,7 +411,7 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
                 var oldPhoto = _context.ProductPhotos.Where(p => p.ProductId == newProduct.Id).ToList();
                 foreach (var item in oldPhoto)
                 {
-                    string path = Path.Combine(_env.WebRootPath, "images/product/", item.PhotoUrl);
+                    string path = Path.Combine(_env.WebRootPath, "images", item.PhotoUrl);
                     if (System.IO.File.Exists(path))
                     {
                         System.IO.File.Delete(path);

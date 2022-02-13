@@ -25,7 +25,7 @@ namespace AllupBackendProject.Models
         public ProductBrand Brand { get; set; }
         public int CampaignId { get; set; }
         public Campaign Campaign { get; set; }
-        public List<ProductPhoto> productPhotos { get; set; }
+        public List<ProductPhoto> ProductPhotos { get; set; }
         [NotMapped]
         [Required]
         public IFormFile[] Photos { get; set; }

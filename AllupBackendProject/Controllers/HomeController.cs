@@ -25,8 +25,10 @@ namespace AllupBackendProject.Controllers
             SliderDescription sliderDescription = _context.SliderDescriptions.FirstOrDefault();
             List<Banner> banners = _context.Banners.ToList();
             List<Category> categories = _context.Categories.ToList();
-            List<Product> products = _context.Products.Include(p => p.Campaign).Include(p => p.productPhotos).Include(p => p.Brand).ToList();
+            List<Product> products = _context.Products.Include(p => p.Campaign).Include(p => p.ProductPhotos).Include(p => p.Brand).ToList();
             Bio bio = _context.Bios.FirstOrDefault();
+            List<Blog> blogs = _context.Blogs.Include(x => x.BlogPhotos)
+                .OrderByDescending(x => x.Id).Take(10).ToList();
             HomeVm homeVm = new HomeVm();
             homeVm.Sliders = sliders;
             homeVm.SliderDescriptions = sliderDescription;
@@ -34,7 +36,8 @@ namespace AllupBackendProject.Controllers
             homeVm.Categories = categories;
             homeVm.Bio = bio;
             homeVm.Products = products;
-            ViewBag.newarrive = products.OrderByDescending(p => p.Id).Take(7).ToList();
+            homeVm.Blogs = blogs;
+            ViewBag.NewArrive = products.OrderByDescending(p => p.Id).Take(7).ToList();
             ViewBag.FeatCategories = categories.Where(c => c.IsFeatured == true);
 
             return View(homeVm);

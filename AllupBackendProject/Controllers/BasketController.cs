@@ -20,10 +20,6 @@ namespace AllupBackendProject.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
         public async Task<IActionResult> AddBasket(int? id)
         {
             if (!User.Identity.IsAuthenticated) return RedirectToAction("Login", "Account");
@@ -31,7 +27,7 @@ namespace AllupBackendProject.Controllers
             if (id == null) return RedirectToAction("Index", "Home");
 
             Product product = await _context.Products.Include(p => p.Campaign).Include(p => p.Brand)
-                .Include(p => p.productPhotos).FirstOrDefaultAsync(p => p.Id == id);
+                .Include(p => p.ProductPhotos).FirstOrDefaultAsync(p => p.Id == id);
             if (product == null) return NotFound();
 
             string basket = Request.Cookies["basketcookie"];
@@ -51,7 +47,7 @@ namespace AllupBackendProject.Controllers
                     Count = 1,
                     BrandId = product.BrandId,
                     Discount = product.Campaign.Discount,
-                    PhotoUrl = product.productPhotos[0].PhotoUrl,
+                    PhotoUrl = product.ProductPhotos[0].PhotoUrl,
                     Price = product.Price
                 };
                 basketProducts.Add(basketProduct);
@@ -78,10 +74,10 @@ namespace AllupBackendProject.Controllers
                     Product product = await _context.Products.Include(p => p.Campaign)
                         .Include(p => p.ColorProducts)
                         .Include(p => p.Brand)
-                        .Include(p => p.productPhotos)
+                        .Include(p => p.ProductPhotos)
                         .FirstOrDefaultAsync(p => p.Id == item.Id);
                     item.Price = product.Price;
-                    item.PhotoUrl = product.productPhotos[0].PhotoUrl;
+                    item.PhotoUrl = product.ProductPhotos[0].PhotoUrl;
                     item.Name = product.Name;
                     item.Discount = product.Campaign.Discount;
                 }
@@ -91,6 +87,7 @@ namespace AllupBackendProject.Controllers
             ViewBag.userid = UserId;
             return View(basketProducts);
         }
+
         public IActionResult BasketCount([FromForm] int id, string change)
         {
             if (!User.Identity.IsAuthenticated) return RedirectToAction("Login", "Account");
@@ -127,8 +124,35 @@ namespace AllupBackendProject.Controllers
                 return Ok(totalcount);
             }
             return Ok("error");
-
         }
-        
+
+        public IActionResult BasketRemove(int id)
+        {
+            if (!User.Identity.IsAuthenticated) return RedirectToAction("Login", "Account");
+            var UserId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            string basket = Request.Cookies["basketcookie"];
+            List<BasketProductVM> basketProducts = new List<BasketProductVM>();
+
+            basketProducts = JsonConvert.DeserializeObject<List<BasketProductVM>>(basket);
+            Product product = _context.Products.Find(id);
+            foreach (var item in basketProducts)
+            {
+                if (item.Id == id && item.UserId == UserId)
+                {
+                    basketProducts.Remove(item);
+                    break;
+                }
+
+            }
+            Response.Cookies.Append("basketcookie", JsonConvert.SerializeObject(basketProducts), new CookieOptions { MaxAge = TimeSpan.FromDays(14) });
+            return Ok();
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
+
 }
+
