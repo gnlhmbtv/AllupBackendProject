@@ -29,6 +29,8 @@ namespace AllupBackendProject.Models
         [NotMapped]
         [Required]
         public IFormFile[] Photos { get; set; }
-        //public List<SalesProduct> SalesProducts { get; set; }
+        public List<ProductTag> ProductTags { get; set; }
+        public List<ColorProduct> ColorProducts { get; set; }
+        public List<Blog> Blogs { get; set; }
     }
 }

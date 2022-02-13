@@ -1,6 +1,7 @@
 ﻿using AllupBackendProject.DAL;
 using AllupBackendProject.Models;
 using FrontToBack.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,8 @@ using System.Threading.Tasks;
 namespace AllupBackendProject.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
+    [Authorize(Roles = "Admin")]
+
     public class ProductController : Controller
     {
         private readonly IWebHostEnvironment _env;
@@ -193,7 +196,6 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(int? id, Product product, int categoryid, List<int> tagId, List<int> colorId)
         {
-            if (categoryid == null) return RedirectToAction("Edit", "Product");
 
             Product newProduct = await _context.Products.FindAsync(id);
             var relationProduct = _context.ProductRelations.Where(p => p.ProductId == id && p.BrandId == newProduct.BrandId).FirstOrDefault();
