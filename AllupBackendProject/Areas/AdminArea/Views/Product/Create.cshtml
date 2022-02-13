@@ -1,4 +1,4 @@
-﻿@model AllupBackendProject.Models.Product
+﻿@model Product
 
 @{
     ViewData["Title"] = "Create";
@@ -54,7 +54,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="BrandId" class="control-label"></label>
-                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brand"></select>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brand">
+                    <option selected value="0">Select Brand</option>
+                </select>
             </div>
             <div class="form-group">
                 <label class="control-label">Category</label>
@@ -63,6 +65,9 @@
                 </select>
             </div>
 
+            <div class="form-group">
+                <label class="control-label">Color</label>
+            </div>
             @foreach (var item in ViewBag.Colors)
             {
                 <div class="form-group form-check d-flex">
@@ -73,7 +78,9 @@
 
             }
 
-
+            <div class="form-group">
+                <label class="control-label">Tag</label>
+            </div>
             @foreach (var item in ViewBag.Tags)
             {
                 <div class="form-group form-check d-flex">
@@ -100,7 +107,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-outline-warning">Back to List</a>
 </div>
 
 @*@section Scripts {
@@ -111,10 +118,9 @@
         $("#BrandId").change(function () {
             const change = $("#BrandId option:selected").val()
             $.ajax({
-                url: "CallCategory?id=" + change,
+                url: "/AdminArea/Product/CallCategory?id=" + change,
                 method: "get",
                 success: function (res) {
-
                     $("#change option").next().remove()
                     $("#change").append(res)
                 }

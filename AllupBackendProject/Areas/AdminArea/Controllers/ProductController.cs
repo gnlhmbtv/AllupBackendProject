@@ -36,9 +36,36 @@ namespace AllupBackendProject.Areas.AdminArea.Controllers
         }
 
         // GET: ProductController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int? id)
         {
-            return View();
+            if (id == null) return NotFound();
+
+            Product product = await _context.Products
+                .Include(p => p.Campaign)
+                .Include(p => p.Brand)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            var relation = await _context.ProductRelations
+                .FirstOrDefaultAsync(p => p.ProductId == id && p.BrandId == product.BrandId);
+
+            ViewBag.category = await _context.Categories
+                .FirstOrDefaultAsync(c => c.Id == relation.CategoryId);
+
+            ViewBag.colors = await _context.ColorProducts
+                .Where(c => c.ProductId == id)
+                .Select(c => c.Color)
+                .ToListAsync();
+
+            ViewBag.tags = await _context.ProductTags
+                .Where(t => t.ProductId == id)
+                .Select(t => t.Tag)
+                .ToListAsync();
+
+            ViewBag.photo = _context.ProductPhotos
+                .Where(p => p.ProductId == product.Id && p.IsMain == true)
+                .FirstOrDefault();
+
+            return View(product);
         }
 
         public ActionResult CallCategory(int? id)

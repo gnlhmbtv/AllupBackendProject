@@ -20,7 +20,14 @@ namespace E_commerce_BackFinal.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<Product> product = _context.Products
+               .Include(p => p.ProductPhotos)
+               .Include(p => p.Brand)
+               .Include(p => p.Campaign)
+               .Include(p => p.ColorProducts)
+               .Include(p => p.ProductTags)
+               .ToList();
+            return View(product);
         }
         public async Task<IActionResult> Detail(int id)
         {

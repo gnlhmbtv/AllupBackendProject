@@ -38,5 +38,7 @@ namespace AllupBackendProject.DAL
         public DbSet<ProductRelation> ProductRelations { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogPhoto> BlogPhoto { get; set; }
+        public DbSet<Sales> Sales { get; set; }
+        public DbSet<SalesProduct> SalesProducts { get; set; }
     }
 }

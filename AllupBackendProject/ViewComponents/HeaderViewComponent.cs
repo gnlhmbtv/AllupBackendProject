@@ -1,10 +1,15 @@
 ﻿using AllupBackendProject.DAL;
 using AllupBackendProject.Models;
+using AllupBackendProject.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace AllupBackendProject.ViewComponents
@@ -21,8 +26,39 @@ namespace AllupBackendProject.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            Bio bio = _context.Bios.FirstOrDefault();
-            return View(await Task.FromResult(bio));
+            var UserId = String.Empty;
+            if (User.Identity.IsAuthenticated)
+            {
+                AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
+                ViewBag.Username = user.FullName;
+                UserId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            }
+
+            
+            string basket = Request.Cookies["basketcookie"];
+
+            List<BasketProductVM> basketProducts = new List<BasketProductVM>();
+            if (basket != null)
+            {
+                basketProducts = JsonConvert.DeserializeObject<List<BasketProductVM>>(basket);
+                foreach (var item in basketProducts)
+                {
+                    Product product = await _context.Products.Include(p => p.Campaign)
+                        .Include(p => p.ColorProducts)
+                        .Include(p => p.Brand)
+                        .Include(p => p.ProductPhotos)
+                        .FirstOrDefaultAsync();
+                    item.Price = product.Price;
+                    item.PhotoUrl = product.ProductPhotos[0].PhotoUrl;
+                    item.Name = product.Name;
+                    item.Discount = product.Campaign.Discount;
+                }
+                HttpContext.Response.Cookies.Append("basketcookie", JsonConvert.SerializeObject(basketProducts), new CookieOptions { MaxAge = TimeSpan.FromDays(14) });
+
+            }
+            ViewBag.userid = UserId;
+            ViewBag.Bio = _context.Bios.FirstOrDefault();
+            return View(basketProducts.Where(b => b.UserId == UserId).Take(4).ToList());
         }
     }
 }
